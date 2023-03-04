@@ -1,0 +1,24 @@
+[0.023s] Invoking command in '/home/ros/colcon_ws/build/q4d_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_teleop -- -j3 -l3
+[0.073s] [35m[1mConsolidate compiler generated dependencies of target q4d_teleop_rviz[0m
+[0.091s] [ 50%] [32mBuilding CXX object CMakeFiles/q4d_teleop_rviz.dir/src/q4d_teleop_rviz.cpp.o[0m
+[3.039s] [01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:[m[K In constructor ‘[01m[KQ4dTeleop::Q4dTeleop()[m[K’:
+[3.039s] [01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:70:9:[m[K [01;31m[Kerror: [m[K‘[01m[KjointStatePub[m[K’ was not declared in this scope; did you mean ‘[01m[KjointStatePub_[m[K’?
+[3.039s]    70 |         [01;31m[KjointStatePub[m[K =create_publisher<sensor_msgs::msg::JointState>("joint_states",100); //MUDAR "JointState"
+[3.039s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[3.039s]       |         [32m[KjointStatePub_[m[K
+[3.040s] [01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:74:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _name_type = class std::vector<std::__cxx11::basic_string<char> >[m[K’ {aka ‘[01m[Kclass std::vector<std::__cxx11::basic_string<char> >[m[K’} has no member named ‘[01m[Kreside[m[K’; did you mean ‘[01m[Kresize[m[K’?
+[3.040s]    74 |         joint_state.name.[01;31m[Kreside[m[K(5);
+[3.040s]       |                          [01;31m[K^~~~~~[m[K
+[3.040s]       |                          [32m[Kresize[m[K
+[3.096s] [01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:[m[K In member function ‘[01m[Kvoid Q4dTeleop::clickCB(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.096s] [01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:121:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope; did you mean ‘[01m[Kgoal_[m[K’?
+[3.096s]   121 |         [01;31m[Kgoal[m[K = KDL::Frame(KDL::Rotation::Quaternion(click->pose.orientation.x,
+[3.096s]       |         [01;31m[K^~~~[m[K
+[3.096s]       |         [32m[Kgoal_[m[K
+[3.103s] [01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:125:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose[m[K’ was not declared in this scope
+[3.104s]   125 |                           KDL::Vector(click>[01;31m[Kpose[m[K.position.x,click>pose.position.y,click->pose.position.z));
+[3.104s]       |                                             [01;31m[K^~~~[m[K
+[6.706s] gmake[2]: *** [CMakeFiles/q4d_teleop_rviz.dir/build.make:76: CMakeFiles/q4d_teleop_rviz.dir/src/q4d_teleop_rviz.cpp.o] Error 1
+[6.707s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/q4d_teleop_rviz.dir/all] Error 2
+[6.707s] gmake: *** [Makefile:146: all] Error 2
+[6.708s] Invoked command in '/home/ros/colcon_ws/build/q4d_teleop' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_teleop -- -j3 -l3

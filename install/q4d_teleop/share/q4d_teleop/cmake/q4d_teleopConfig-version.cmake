@@ -1,0 +1,1 @@
+/home/ros/colcon_ws/build/q4d_teleop/ament_cmake_core/q4d_teleopConfig-version.cmake

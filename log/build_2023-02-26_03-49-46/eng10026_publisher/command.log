@@ -1,0 +1,6 @@
+Invoking command in '/home/ros/colcon_ws/build/eng10026_publisher': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/src/eng10026_publisher -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/eng10026_publisher
+Invoked command in '/home/ros/colcon_ws/build/eng10026_publisher' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/src/eng10026_publisher -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/eng10026_publisher
+Invoking command in '/home/ros/colcon_ws/build/eng10026_publisher': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_publisher -- -j3 -l3
+Invoked command in '/home/ros/colcon_ws/build/eng10026_publisher' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_publisher -- -j3 -l3
+Invoking command in '/home/ros/colcon_ws/build/eng10026_publisher': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_publisher
+Invoked command in '/home/ros/colcon_ws/build/eng10026_publisher' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_publisher

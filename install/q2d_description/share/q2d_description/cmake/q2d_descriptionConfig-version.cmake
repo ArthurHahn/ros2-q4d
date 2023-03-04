@@ -1,0 +1,1 @@
+/home/ros/colcon_ws/build/q2d_description/ament_cmake_core/q2d_descriptionConfig-version.cmake

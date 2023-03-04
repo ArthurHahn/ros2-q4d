@@ -1,0 +1,629 @@
+[0.333s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.333s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=3, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f82293d4550>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f8229c35ae0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f8229c35ae0>>)
+[0.368s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.368s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.368s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.368s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.368s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.368s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.368s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ros/colcon_ws'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_lab2) by extensions ['ignore', 'ignore_ament_install']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_lab2) by extension 'ignore'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_lab2) by extension 'ignore_ament_install'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_lab2) by extensions ['colcon_pkg']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_lab2) by extension 'colcon_pkg'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_lab2) by extensions ['colcon_meta']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_lab2) by extension 'colcon_meta'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_lab2) by extensions ['ros']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_lab2) by extension 'ros'
+[0.385s] DEBUG:colcon.colcon_core.package_identification:Package 'src/eng10026_lab2' with type 'ros.ament_cmake' and name 'eng10026_lab2'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_publisher) by extension 'ignore'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_publisher) by extension 'ignore_ament_install'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_publisher) by extensions ['colcon_pkg']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_publisher) by extension 'colcon_pkg'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_publisher) by extensions ['colcon_meta']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_publisher) by extension 'colcon_meta'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_publisher) by extensions ['ros']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_publisher) by extension 'ros'
+[0.386s] DEBUG:colcon.colcon_core.package_identification:Package 'src/eng10026_publisher' with type 'ros.ament_cmake' and name 'eng10026_publisher'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_subscriber) by extension 'ignore'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_subscriber) by extension 'ignore_ament_install'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_subscriber) by extensions ['colcon_pkg']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_subscriber) by extension 'colcon_pkg'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_subscriber) by extensions ['colcon_meta']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_subscriber) by extension 'colcon_meta'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_subscriber) by extensions ['ros']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_subscriber) by extension 'ros'
+[0.387s] DEBUG:colcon.colcon_core.package_identification:Package 'src/eng10026_subscriber' with type 'ros.ament_cmake' and name 'eng10026_subscriber'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2) by extensions ['ignore', 'ignore_ament_install']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2) by extension 'ignore'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2) by extension 'ignore_ament_install'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2) by extensions ['colcon_pkg']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2) by extension 'colcon_pkg'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2) by extensions ['colcon_meta']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2) by extension 'colcon_meta'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2) by extensions ['ros']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2) by extension 'ros'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2) by extensions ['cmake', 'python']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2) by extension 'cmake'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2) by extension 'python'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2) by extensions ['python_setup_py']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2) by extension 'python_setup_py'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2/config) by extensions ['ignore', 'ignore_ament_install']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2/config) by extension 'ignore'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2/config) by extension 'ignore_ament_install'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2/config) by extensions ['colcon_pkg']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2/config) by extension 'colcon_pkg'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2/config) by extensions ['colcon_meta']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2/config) by extension 'colcon_meta'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2/config) by extensions ['ros']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2/config) by extension 'ros'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2/config) by extensions ['cmake', 'python']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2/config) by extension 'cmake'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2/config) by extension 'python'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2/config) by extensions ['python_setup_py']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/eng10026_tf2/config) by extension 'python_setup_py'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d) by extensions ['ignore', 'ignore_ament_install']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d) by extension 'ignore'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d) by extension 'ignore_ament_install'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d) by extensions ['colcon_pkg']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d) by extension 'colcon_pkg'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d) by extensions ['colcon_meta']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d) by extension 'colcon_meta'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d) by extensions ['ros']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d) by extension 'ros'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d) by extensions ['cmake', 'python']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d) by extension 'cmake'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d) by extension 'python'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d) by extensions ['python_setup_py']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d) by extension 'python_setup_py'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_bringup) by extension 'ignore'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_bringup) by extension 'ignore_ament_install'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_bringup) by extensions ['colcon_pkg']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_bringup) by extension 'colcon_pkg'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_bringup) by extensions ['colcon_meta']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_bringup) by extension 'colcon_meta'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_bringup) by extensions ['ros']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_bringup) by extension 'ros'
+[0.390s] DEBUG:colcon.colcon_core.package_identification:Package 'src/q2d/q2d_bringup' with type 'ros.ament_cmake' and name 'q2d_bringup'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_description) by extensions ['ignore', 'ignore_ament_install']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_description) by extension 'ignore'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_description) by extension 'ignore_ament_install'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_description) by extensions ['colcon_pkg']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_description) by extension 'colcon_pkg'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_description) by extensions ['colcon_meta']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_description) by extension 'colcon_meta'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_description) by extensions ['ros']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_description) by extension 'ros'
+[0.391s] DEBUG:colcon.colcon_core.package_identification:Package 'src/q2d/q2d_description' with type 'ros.ament_cmake' and name 'q2d_description'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_teleop) by extension 'ignore'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_teleop) by extension 'ignore_ament_install'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_teleop) by extensions ['colcon_pkg']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_teleop) by extension 'colcon_pkg'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_teleop) by extensions ['colcon_meta']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_teleop) by extension 'colcon_meta'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_teleop) by extensions ['ros']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/q2d/q2d_teleop) by extension 'ros'
+[0.393s] DEBUG:colcon.colcon_core.package_identification:Package 'src/q2d/q2d_teleop' with type 'ros.ament_cmake' and name 'q2d_teleop'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_description) by extensions ['ignore', 'ignore_ament_install']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_description) by extension 'ignore'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_description) by extension 'ignore_ament_install'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_description) by extensions ['colcon_pkg']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_description) by extension 'colcon_pkg'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_description) by extensions ['colcon_meta']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_description) by extension 'colcon_meta'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_description) by extensions ['ros']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_description) by extension 'ros'
+[0.393s] DEBUG:colcon.colcon_core.package_identification:Package 'src/q4d_description' with type 'ros.ament_cmake' and name 'q4d_description'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_teleop) by extension 'ignore'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_teleop) by extension 'ignore_ament_install'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_teleop) by extensions ['colcon_pkg']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_teleop) by extension 'colcon_pkg'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_teleop) by extensions ['colcon_meta']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_teleop) by extension 'colcon_meta'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_teleop) by extensions ['ros']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(src/q4d_teleop) by extension 'ros'
+[0.395s] DEBUG:colcon.colcon_core.package_identification:Package 'src/q4d_teleop' with type 'ros.ament_cmake' and name 'q4d_teleop'
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.423s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/ros/colcon_ws/install
+[0.425s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 308 installed packages in /opt/ros/humble
+[0.427s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'eng10026_lab2' build argument 'cmake_args' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'eng10026_lab2' build argument 'cmake_target' from command line to 'None'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'eng10026_lab2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'eng10026_lab2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.493s] Level 5:colcon.colcon_core.verb:set package 'eng10026_lab2' build argument 'cmake_clean_first' from command line to 'False'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'eng10026_lab2' build argument 'cmake_force_configure' from command line to 'False'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'eng10026_lab2' build argument 'ament_cmake_args' from command line to 'None'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'eng10026_lab2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'eng10026_lab2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.494s] DEBUG:colcon.colcon_core.verb:Building package 'eng10026_lab2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/colcon_ws/build/eng10026_lab2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/colcon_ws/install/eng10026_lab2', 'merge_install': False, 'path': '/home/ros/colcon_ws/src/eng10026_lab2', 'symlink_install': True, 'test_result_base': None}
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'eng10026_publisher' build argument 'cmake_args' from command line to 'None'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'eng10026_publisher' build argument 'cmake_target' from command line to 'None'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'eng10026_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'eng10026_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'eng10026_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'eng10026_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'eng10026_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'eng10026_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'eng10026_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.495s] DEBUG:colcon.colcon_core.verb:Building package 'eng10026_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/colcon_ws/build/eng10026_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/colcon_ws/install/eng10026_publisher', 'merge_install': False, 'path': '/home/ros/colcon_ws/src/eng10026_publisher', 'symlink_install': True, 'test_result_base': None}
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'eng10026_subscriber' build argument 'cmake_args' from command line to 'None'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'eng10026_subscriber' build argument 'cmake_target' from command line to 'None'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'eng10026_subscriber' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'eng10026_subscriber' build argument 'cmake_clean_cache' from command line to 'False'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'eng10026_subscriber' build argument 'cmake_clean_first' from command line to 'False'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'eng10026_subscriber' build argument 'cmake_force_configure' from command line to 'False'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'eng10026_subscriber' build argument 'ament_cmake_args' from command line to 'None'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'eng10026_subscriber' build argument 'catkin_cmake_args' from command line to 'None'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'eng10026_subscriber' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.496s] DEBUG:colcon.colcon_core.verb:Building package 'eng10026_subscriber' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/colcon_ws/build/eng10026_subscriber', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/colcon_ws/install/eng10026_subscriber', 'merge_install': False, 'path': '/home/ros/colcon_ws/src/eng10026_subscriber', 'symlink_install': True, 'test_result_base': None}
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'q2d_bringup' build argument 'cmake_args' from command line to 'None'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'q2d_bringup' build argument 'cmake_target' from command line to 'None'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'q2d_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'q2d_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'q2d_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'q2d_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'q2d_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'q2d_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.497s] Level 5:colcon.colcon_core.verb:set package 'q2d_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.497s] DEBUG:colcon.colcon_core.verb:Building package 'q2d_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/colcon_ws/build/q2d_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/colcon_ws/install/q2d_bringup', 'merge_install': False, 'path': '/home/ros/colcon_ws/src/q2d/q2d_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.498s] Level 5:colcon.colcon_core.verb:set package 'q2d_description' build argument 'cmake_args' from command line to 'None'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'q2d_description' build argument 'cmake_target' from command line to 'None'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'q2d_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'q2d_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'q2d_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'q2d_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'q2d_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'q2d_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.499s] Level 5:colcon.colcon_core.verb:set package 'q2d_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.499s] DEBUG:colcon.colcon_core.verb:Building package 'q2d_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/colcon_ws/build/q2d_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/colcon_ws/install/q2d_description', 'merge_install': False, 'path': '/home/ros/colcon_ws/src/q2d/q2d_description', 'symlink_install': True, 'test_result_base': None}
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'q2d_teleop' build argument 'cmake_args' from command line to 'None'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'q2d_teleop' build argument 'cmake_target' from command line to 'None'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'q2d_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'q2d_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'q2d_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'q2d_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'q2d_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'q2d_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'q2d_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.500s] DEBUG:colcon.colcon_core.verb:Building package 'q2d_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/colcon_ws/build/q2d_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/colcon_ws/install/q2d_teleop', 'merge_install': False, 'path': '/home/ros/colcon_ws/src/q2d/q2d_teleop', 'symlink_install': True, 'test_result_base': None}
+[0.501s] Level 5:colcon.colcon_core.verb:set package 'q4d_description' build argument 'cmake_args' from command line to 'None'
+[0.501s] Level 5:colcon.colcon_core.verb:set package 'q4d_description' build argument 'cmake_target' from command line to 'None'
+[0.501s] Level 5:colcon.colcon_core.verb:set package 'q4d_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.501s] Level 5:colcon.colcon_core.verb:set package 'q4d_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.501s] Level 5:colcon.colcon_core.verb:set package 'q4d_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.501s] Level 5:colcon.colcon_core.verb:set package 'q4d_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.501s] Level 5:colcon.colcon_core.verb:set package 'q4d_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.501s] Level 5:colcon.colcon_core.verb:set package 'q4d_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.501s] Level 5:colcon.colcon_core.verb:set package 'q4d_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.501s] DEBUG:colcon.colcon_core.verb:Building package 'q4d_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/colcon_ws/build/q4d_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/colcon_ws/install/q4d_description', 'merge_install': False, 'path': '/home/ros/colcon_ws/src/q4d_description', 'symlink_install': True, 'test_result_base': None}
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'q4d_teleop' build argument 'cmake_args' from command line to 'None'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'q4d_teleop' build argument 'cmake_target' from command line to 'None'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'q4d_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'q4d_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'q4d_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'q4d_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'q4d_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'q4d_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'q4d_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.502s] DEBUG:colcon.colcon_core.verb:Building package 'q4d_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ros/colcon_ws/build/q4d_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ros/colcon_ws/install/q4d_teleop', 'merge_install': False, 'path': '/home/ros/colcon_ws/src/q4d_teleop', 'symlink_install': True, 'test_result_base': None}
+[0.503s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.507s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.507s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/colcon_ws/src/eng10026_lab2' with build type 'ament_cmake'
+[0.507s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/colcon_ws/src/eng10026_lab2'
+[0.512s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.512s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.512s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.517s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/colcon_ws/src/eng10026_publisher' with build type 'ament_cmake'
+[0.517s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/colcon_ws/src/eng10026_publisher'
+[0.518s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.518s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.521s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/colcon_ws/src/eng10026_subscriber' with build type 'ament_cmake'
+[0.521s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/colcon_ws/src/eng10026_subscriber'
+[0.522s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.522s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.534s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/eng10026_lab2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_lab2 -- -j3 -l3
+[0.537s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/eng10026_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_publisher -- -j3 -l3
+[0.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/eng10026_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_subscriber -- -j3 -l3
+[0.591s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/eng10026_lab2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_lab2 -- -j3 -l3
+[0.601s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/eng10026_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_publisher -- -j3 -l3
+[0.607s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/eng10026_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_subscriber -- -j3 -l3
+[0.613s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/eng10026_lab2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_lab2
+[0.617s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/eng10026_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_publisher
+[0.634s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/eng10026_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_subscriber
+[0.643s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(eng10026_lab2)
+[0.645s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/eng10026_lab2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_lab2
+[0.648s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_lab2' for CMake module files
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_lab2' for CMake config files
+[0.649s] Level 1:colcon.colcon_core.shell:create_environment_hook('eng10026_lab2', 'cmake_prefix_path')
+[0.650s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/hook/cmake_prefix_path.ps1'
+[0.651s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/hook/cmake_prefix_path.dsv'
+[0.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/hook/cmake_prefix_path.sh'
+[0.653s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_lab2/lib'
+[0.654s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_lab2/bin'
+[0.654s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_lab2/lib/pkgconfig/eng10026_lab2.pc'
+[0.654s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_lab2/lib/python3.10/site-packages'
+[0.654s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_lab2/bin'
+[0.656s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/package.ps1'
+[0.656s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/package.dsv'
+[0.657s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/package.sh'
+[0.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/package.bash'
+[0.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/package.zsh'
+[0.659s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/eng10026_lab2/share/colcon-core/packages/eng10026_lab2)
+[0.660s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(eng10026_publisher)
+[0.661s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/eng10026_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_publisher
+[0.663s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_publisher' for CMake module files
+[0.664s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_publisher' for CMake config files
+[0.665s] Level 1:colcon.colcon_core.shell:create_environment_hook('eng10026_publisher', 'cmake_prefix_path')
+[0.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/hook/cmake_prefix_path.ps1'
+[0.667s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/hook/cmake_prefix_path.dsv'
+[0.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/hook/cmake_prefix_path.sh'
+[0.667s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_publisher/lib'
+[0.668s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_publisher/bin'
+[0.668s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_publisher/lib/pkgconfig/eng10026_publisher.pc'
+[0.668s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_publisher/lib/python3.10/site-packages'
+[0.668s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_publisher/bin'
+[0.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/package.ps1'
+[0.670s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/package.dsv'
+[0.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/package.sh'
+[0.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/package.bash'
+[0.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/package.zsh'
+[0.671s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/eng10026_publisher/share/colcon-core/packages/eng10026_publisher)
+[0.672s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(eng10026_subscriber)
+[0.674s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_subscriber' for CMake module files
+[0.675s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/eng10026_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_subscriber
+[0.675s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_subscriber' for CMake config files
+[0.676s] Level 1:colcon.colcon_core.shell:create_environment_hook('eng10026_subscriber', 'cmake_prefix_path')
+[0.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/hook/cmake_prefix_path.ps1'
+[0.677s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/hook/cmake_prefix_path.dsv'
+[0.678s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/hook/cmake_prefix_path.sh'
+[0.678s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_subscriber/lib'
+[0.678s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_subscriber/bin'
+[0.678s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_subscriber/lib/pkgconfig/eng10026_subscriber.pc'
+[0.679s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_subscriber/lib/python3.10/site-packages'
+[0.679s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_subscriber/bin'
+[0.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/package.ps1'
+[0.681s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/package.dsv'
+[0.681s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/package.sh'
+[0.681s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/package.bash'
+[0.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/package.zsh'
+[0.682s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/eng10026_subscriber/share/colcon-core/packages/eng10026_subscriber)
+[0.684s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(eng10026_lab2)
+[0.686s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_lab2' for CMake module files
+[0.686s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_lab2' for CMake config files
+[0.686s] Level 1:colcon.colcon_core.shell:create_environment_hook('eng10026_lab2', 'cmake_prefix_path')
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/hook/cmake_prefix_path.ps1'
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/hook/cmake_prefix_path.dsv'
+[0.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/hook/cmake_prefix_path.sh'
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_lab2/lib'
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_lab2/bin'
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_lab2/lib/pkgconfig/eng10026_lab2.pc'
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_lab2/lib/python3.10/site-packages'
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_lab2/bin'
+[0.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/package.ps1'
+[0.692s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/package.dsv'
+[0.692s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/package.sh'
+[0.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/package.bash'
+[0.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/package.zsh'
+[0.693s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/eng10026_lab2/share/colcon-core/packages/eng10026_lab2)
+[0.694s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/colcon_ws/src/q2d/q2d_bringup' with build type 'ament_cmake'
+[0.694s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/colcon_ws/src/q2d/q2d_bringup'
+[0.696s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.696s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.702s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(eng10026_publisher)
+[0.704s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_publisher' for CMake module files
+[0.704s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_publisher' for CMake config files
+[0.705s] Level 1:colcon.colcon_core.shell:create_environment_hook('eng10026_publisher', 'cmake_prefix_path')
+[0.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/hook/cmake_prefix_path.ps1'
+[0.706s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/hook/cmake_prefix_path.dsv'
+[0.707s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/hook/cmake_prefix_path.sh'
+[0.707s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_publisher/lib'
+[0.707s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_publisher/bin'
+[0.707s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_publisher/lib/pkgconfig/eng10026_publisher.pc'
+[0.708s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_publisher/lib/python3.10/site-packages'
+[0.708s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_publisher/bin'
+[0.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/package.ps1'
+[0.710s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/package.dsv'
+[0.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/package.sh'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/package.bash'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/package.zsh'
+[0.711s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/eng10026_publisher/share/colcon-core/packages/eng10026_publisher)
+[0.712s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/colcon_ws/src/q2d/q2d_description' with build type 'ament_cmake'
+[0.712s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/colcon_ws/src/q2d/q2d_description'
+[0.714s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.714s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.720s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(eng10026_subscriber)
+[0.721s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_subscriber' for CMake module files
+[0.722s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_subscriber' for CMake config files
+[0.722s] Level 1:colcon.colcon_core.shell:create_environment_hook('eng10026_subscriber', 'cmake_prefix_path')
+[0.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/hook/cmake_prefix_path.ps1'
+[0.723s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/hook/cmake_prefix_path.dsv'
+[0.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/hook/cmake_prefix_path.sh'
+[0.724s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_subscriber/lib'
+[0.724s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_subscriber/bin'
+[0.724s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_subscriber/lib/pkgconfig/eng10026_subscriber.pc'
+[0.724s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_subscriber/lib/python3.10/site-packages'
+[0.724s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/eng10026_subscriber/bin'
+[0.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/package.ps1'
+[0.726s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/package.dsv'
+[0.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/package.sh'
+[0.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/package.bash'
+[0.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/eng10026_subscriber/share/eng10026_subscriber/package.zsh'
+[0.728s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/eng10026_subscriber/share/colcon-core/packages/eng10026_subscriber)
+[0.728s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/colcon_ws/src/q2d/q2d_teleop' with build type 'ament_cmake'
+[0.728s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/colcon_ws/src/q2d/q2d_teleop'
+[0.730s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.730s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.739s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/q2d_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q2d_bringup -- -j3 -l3
+[0.741s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/q2d_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q2d_description -- -j3 -l3
+[0.745s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/q2d_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q2d_teleop -- -j3 -l3
+[0.768s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/q2d_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q2d_bringup -- -j3 -l3
+[0.774s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/q2d_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q2d_description -- -j3 -l3
+[0.797s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/q2d_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q2d_bringup
+[0.798s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/q2d_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q2d_description
+[0.804s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/q2d_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q2d_teleop -- -j3 -l3
+[0.814s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(q2d_bringup)
+[0.815s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_bringup' for CMake module files
+[0.816s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/q2d_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q2d_bringup
+[0.816s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_bringup' for CMake config files
+[0.817s] Level 1:colcon.colcon_core.shell:create_environment_hook('q2d_bringup', 'cmake_prefix_path')
+[0.817s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/hook/cmake_prefix_path.ps1'
+[0.818s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/hook/cmake_prefix_path.dsv'
+[0.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/hook/cmake_prefix_path.sh'
+[0.818s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_bringup/lib'
+[0.819s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_bringup/bin'
+[0.819s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_bringup/lib/pkgconfig/q2d_bringup.pc'
+[0.819s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_bringup/lib/python3.10/site-packages'
+[0.819s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_bringup/bin'
+[0.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/package.ps1'
+[0.821s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/package.dsv'
+[0.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/package.sh'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/package.bash'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/package.zsh'
+[0.822s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/q2d_bringup/share/colcon-core/packages/q2d_bringup)
+[0.823s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(q2d_description)
+[0.826s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_description' for CMake module files
+[0.826s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_description' for CMake config files
+[0.826s] Level 1:colcon.colcon_core.shell:create_environment_hook('q2d_description', 'cmake_prefix_path')
+[0.828s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/hook/cmake_prefix_path.ps1'
+[0.828s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/hook/cmake_prefix_path.dsv'
+[0.828s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/hook/cmake_prefix_path.sh'
+[0.829s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_description/bin'
+[0.829s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_description/lib/pkgconfig/q2d_description.pc'
+[0.829s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_description/lib/python3.10/site-packages'
+[0.829s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_description/bin'
+[0.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/package.ps1'
+[0.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/q2d_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q2d_description
+[0.832s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/package.dsv'
+[0.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/package.sh'
+[0.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/package.bash'
+[0.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/package.zsh'
+[0.838s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/q2d_description/share/colcon-core/packages/q2d_description)
+[0.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/q2d_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q2d_teleop
+[0.842s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(q2d_bringup)
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_bringup' for CMake module files
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_bringup' for CMake config files
+[0.844s] Level 1:colcon.colcon_core.shell:create_environment_hook('q2d_bringup', 'cmake_prefix_path')
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/hook/cmake_prefix_path.ps1'
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/hook/cmake_prefix_path.dsv'
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/hook/cmake_prefix_path.sh'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_bringup/lib'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_bringup/bin'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_bringup/lib/pkgconfig/q2d_bringup.pc'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_bringup/lib/python3.10/site-packages'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_bringup/bin'
+[0.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/package.ps1'
+[0.849s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/package.dsv'
+[0.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/package.sh'
+[0.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/package.bash'
+[0.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_bringup/share/q2d_bringup/package.zsh'
+[0.850s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/q2d_bringup/share/colcon-core/packages/q2d_bringup)
+[0.851s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/colcon_ws/src/q4d_description' with build type 'ament_cmake'
+[0.854s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/colcon_ws/src/q4d_description'
+[0.855s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.856s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.862s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(q2d_teleop)
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_teleop' for CMake module files
+[0.865s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/q2d_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q2d_teleop
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_teleop' for CMake config files
+[0.866s] Level 1:colcon.colcon_core.shell:create_environment_hook('q2d_teleop', 'cmake_prefix_path')
+[0.866s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/hook/cmake_prefix_path.ps1'
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/hook/cmake_prefix_path.dsv'
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/hook/cmake_prefix_path.sh'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_teleop/lib'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_teleop/bin'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_teleop/lib/pkgconfig/q2d_teleop.pc'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_teleop/lib/python3.10/site-packages'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_teleop/bin'
+[0.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/package.ps1'
+[0.870s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/package.dsv'
+[0.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/package.sh'
+[0.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/package.bash'
+[0.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/package.zsh'
+[0.871s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/q2d_teleop/share/colcon-core/packages/q2d_teleop)
+[0.874s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/q4d_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_description -- -j3 -l3
+[0.876s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(q2d_description)
+[0.877s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_description' for CMake module files
+[0.878s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_description' for CMake config files
+[0.878s] Level 1:colcon.colcon_core.shell:create_environment_hook('q2d_description', 'cmake_prefix_path')
+[0.880s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/hook/cmake_prefix_path.ps1'
+[0.880s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/hook/cmake_prefix_path.dsv'
+[0.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/hook/cmake_prefix_path.sh'
+[0.883s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_description/bin'
+[0.883s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_description/lib/pkgconfig/q2d_description.pc'
+[0.883s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_description/lib/python3.10/site-packages'
+[0.883s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_description/bin'
+[0.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/package.ps1'
+[0.885s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/package.dsv'
+[0.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/package.sh'
+[0.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/package.bash'
+[0.887s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_description/share/q2d_description/package.zsh'
+[0.887s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/q2d_description/share/colcon-core/packages/q2d_description)
+[0.888s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ros/colcon_ws/src/q4d_teleop' with build type 'ament_cmake'
+[0.888s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ros/colcon_ws/src/q4d_teleop'
+[0.891s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.891s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.898s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(q2d_teleop)
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_teleop' for CMake module files
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_teleop' for CMake config files
+[0.900s] Level 1:colcon.colcon_core.shell:create_environment_hook('q2d_teleop', 'cmake_prefix_path')
+[0.902s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/hook/cmake_prefix_path.ps1'
+[0.902s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/hook/cmake_prefix_path.dsv'
+[0.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/hook/cmake_prefix_path.sh'
+[0.903s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_teleop/lib'
+[0.903s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_teleop/bin'
+[0.903s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_teleop/lib/pkgconfig/q2d_teleop.pc'
+[0.904s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_teleop/lib/python3.10/site-packages'
+[0.904s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q2d_teleop/bin'
+[0.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/package.ps1'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/package.dsv'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/package.sh'
+[0.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/package.bash'
+[0.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/package.zsh'
+[0.908s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/q2d_teleop/share/colcon-core/packages/q2d_teleop)
+[0.911s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/q4d_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_teleop -- -j3 -l3
+[0.917s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/q4d_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_description -- -j3 -l3
+[0.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/q4d_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q4d_description
+[0.955s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(q4d_description)
+[0.955s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/q4d_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q4d_description
+[0.956s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_description' for CMake module files
+[0.957s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_description' for CMake config files
+[0.957s] Level 1:colcon.colcon_core.shell:create_environment_hook('q4d_description', 'cmake_prefix_path')
+[0.959s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/hook/cmake_prefix_path.ps1'
+[0.959s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/hook/cmake_prefix_path.dsv'
+[0.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/hook/cmake_prefix_path.sh'
+[0.961s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_description/lib'
+[0.961s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_description/bin'
+[0.961s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_description/lib/pkgconfig/q4d_description.pc'
+[0.961s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_description/lib/python3.10/site-packages'
+[0.961s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_description/bin'
+[0.963s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.ps1'
+[0.964s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.dsv'
+[0.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.sh'
+[0.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.bash'
+[0.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.zsh'
+[0.965s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/q4d_description/share/colcon-core/packages/q4d_description)
+[0.979s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(q4d_description)
+[0.980s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_description' for CMake module files
+[0.981s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_description' for CMake config files
+[0.981s] Level 1:colcon.colcon_core.shell:create_environment_hook('q4d_description', 'cmake_prefix_path')
+[0.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/hook/cmake_prefix_path.ps1'
+[0.982s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/hook/cmake_prefix_path.dsv'
+[0.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/hook/cmake_prefix_path.sh'
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_description/lib'
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_description/bin'
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_description/lib/pkgconfig/q4d_description.pc'
+[0.984s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_description/lib/python3.10/site-packages'
+[0.984s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_description/bin'
+[0.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.ps1'
+[0.986s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.dsv'
+[0.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.sh'
+[0.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.bash'
+[0.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.zsh'
+[0.987s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/q4d_description/share/colcon-core/packages/q4d_description)
+[12.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/q4d_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_teleop -- -j3 -l3
+[12.880s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ros/colcon_ws/build/q4d_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q4d_teleop
+[12.895s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(q4d_teleop)
+[12.897s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_teleop' for CMake module files
+[12.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ros/colcon_ws/build/q4d_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q4d_teleop
+[12.898s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_teleop' for CMake config files
+[12.898s] Level 1:colcon.colcon_core.shell:create_environment_hook('q4d_teleop', 'cmake_prefix_path')
+[12.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/hook/cmake_prefix_path.ps1'
+[12.900s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/hook/cmake_prefix_path.dsv'
+[12.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/hook/cmake_prefix_path.sh'
+[12.900s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_teleop/lib'
+[12.900s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_teleop/bin'
+[12.900s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_teleop/lib/pkgconfig/q4d_teleop.pc'
+[12.901s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_teleop/lib/python3.10/site-packages'
+[12.901s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_teleop/bin'
+[12.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.ps1'
+[12.903s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.dsv'
+[12.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.sh'
+[12.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.bash'
+[12.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.zsh'
+[12.904s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/q4d_teleop/share/colcon-core/packages/q4d_teleop)
+[12.920s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(q4d_teleop)
+[12.922s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_teleop' for CMake module files
+[12.922s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_teleop' for CMake config files
+[12.922s] Level 1:colcon.colcon_core.shell:create_environment_hook('q4d_teleop', 'cmake_prefix_path')
+[12.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/hook/cmake_prefix_path.ps1'
+[12.924s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/hook/cmake_prefix_path.dsv'
+[12.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/hook/cmake_prefix_path.sh'
+[12.925s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_teleop/lib'
+[12.925s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_teleop/bin'
+[12.925s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_teleop/lib/pkgconfig/q4d_teleop.pc'
+[12.925s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_teleop/lib/python3.10/site-packages'
+[12.925s] Level 1:colcon.colcon_core.environment:checking '/home/ros/colcon_ws/install/q4d_teleop/bin'
+[12.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.ps1'
+[12.927s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.dsv'
+[12.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.sh'
+[12.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.bash'
+[12.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.zsh'
+[12.928s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ros/colcon_ws/install/q4d_teleop/share/colcon-core/packages/q4d_teleop)
+[12.929s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.929s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.929s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.929s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.935s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.935s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.935s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.945s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.947s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros/colcon_ws/install/local_setup.ps1'
+[12.948s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ros/colcon_ws/install/_local_setup_util_ps1.py'
+[12.949s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros/colcon_ws/install/setup.ps1'
+[12.952s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros/colcon_ws/install/local_setup.sh'
+[12.952s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ros/colcon_ws/install/_local_setup_util_sh.py'
+[12.952s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros/colcon_ws/install/setup.sh'
+[12.954s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros/colcon_ws/install/local_setup.bash'
+[12.955s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros/colcon_ws/install/setup.bash'
+[12.956s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ros/colcon_ws/install/local_setup.zsh'
+[12.956s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ros/colcon_ws/install/setup.zsh'

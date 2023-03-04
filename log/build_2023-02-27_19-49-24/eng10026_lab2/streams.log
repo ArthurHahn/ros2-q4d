@@ -1,0 +1,23 @@
+[0.026s] Invoking command in '/home/ros/colcon_ws/build/eng10026_lab2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_lab2 -- -j3 -l3
+[0.125s] [100%] Built target point_map
+[0.136s] Invoked command in '/home/ros/colcon_ws/build/eng10026_lab2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_lab2 -- -j3 -l3
+[0.164s] Invoking command in '/home/ros/colcon_ws/build/eng10026_lab2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_lab2
+[0.169s] -- Install configuration: ""
+[0.170s] -- Execute custom install script
+[0.171s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_lab2/lib/eng10026_lab2/point_map
+[0.171s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_lab2/share/ament_index/resource_index/package_run_dependencies/eng10026_lab2
+[0.172s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_lab2/share/ament_index/resource_index/parent_prefix_path/eng10026_lab2
+[0.172s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/environment/ament_prefix_path.sh
+[0.173s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/environment/ament_prefix_path.dsv
+[0.173s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/environment/path.sh
+[0.173s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/environment/path.dsv
+[0.173s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/local_setup.bash
+[0.173s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/local_setup.sh
+[0.174s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/local_setup.zsh
+[0.174s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/local_setup.dsv
+[0.174s] -- Symlinking: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/package.dsv
+[0.181s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_lab2/share/ament_index/resource_index/packages/eng10026_lab2
+[0.181s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/cmake/eng10026_lab2Config.cmake
+[0.182s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/cmake/eng10026_lab2Config-version.cmake
+[0.182s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/package.xml
+[0.184s] Invoked command in '/home/ros/colcon_ws/build/eng10026_lab2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_lab2

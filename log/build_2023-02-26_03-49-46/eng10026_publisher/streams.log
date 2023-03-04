@@ -1,0 +1,77 @@
+[0.109s] Invoking command in '/home/ros/colcon_ws/build/eng10026_publisher': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/src/eng10026_publisher -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/eng10026_publisher
+[0.336s] -- The C compiler identification is GNU 11.3.0
+[0.552s] -- The CXX compiler identification is GNU 11.3.0
+[0.591s] -- Detecting C compiler ABI info
+[0.914s] -- Detecting C compiler ABI info - done
+[0.916s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.921s] -- Detecting C compile features
+[0.943s] -- Detecting C compile features - done
+[0.960s] -- Detecting CXX compiler ABI info
+[1.266s] -- Detecting CXX compiler ABI info - done
+[1.286s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.287s] -- Detecting CXX compile features
+[1.288s] -- Detecting CXX compile features - done
+[1.301s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.683s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[1.873s] -- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)
+[1.947s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.957s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.977s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.032s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.095s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.233s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.247s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.572s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.628s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.751s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.768s] -- Looking for pthread.h
+[3.013s] -- Looking for pthread.h - found
+[3.017s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.234s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.236s] -- Found Threads: TRUE  
+[3.583s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.738s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.968s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.983s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.984s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ros/colcon_ws/src/eng10026_publisher/include>
+[3.984s] -- Configured cppcheck exclude dirs and/or files: 
+[4.000s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.000s] -- Configured cpplint exclude dirs and/or files: 
+[4.007s] -- Added test 'lint_cmake' to check CMake code style
+[4.023s] -- Added test 'uncrustify' to check C / C++ code style
+[4.024s] -- Configured uncrustify additional arguments: 
+[4.029s] -- Added test 'xmllint' to check XML markup files
+[4.029s] -- Configuring done
+[4.076s] -- Generating done
+[4.081s] -- Build files have been written to: /home/ros/colcon_ws/build/eng10026_publisher
+[4.099s] Invoked command in '/home/ros/colcon_ws/build/eng10026_publisher' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/src/eng10026_publisher -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/eng10026_publisher
+[4.105s] Invoking command in '/home/ros/colcon_ws/build/eng10026_publisher': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_publisher -- -j3 -l3
+[4.252s] [ 50%] [32mBuilding CXX object CMakeFiles/p2_publisher.dir/src/p2_publisher.cpp.o[0m
+[24.337s] [100%] [32m[1mLinking CXX executable p2_publisher[0m
+[24.882s] [100%] Built target p2_publisher
+[24.920s] Invoked command in '/home/ros/colcon_ws/build/eng10026_publisher' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_publisher -- -j3 -l3
+[25.044s] Invoking command in '/home/ros/colcon_ws/build/eng10026_publisher': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_publisher
+[25.059s] -- Install configuration: ""
+[25.074s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/lib/eng10026_publisher/p2_publisher
+[25.082s] -- Set runtime path of "/home/ros/colcon_ws/install/eng10026_publisher/lib/eng10026_publisher/p2_publisher" to ""
+[25.091s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/launch
+[25.091s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/launch/display.launch.xml
+[25.092s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/launch/p2.launch.xml
+[25.092s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/config
+[25.093s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/config/p1_p2.rviz
+[25.093s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/ament_index/resource_index/package_run_dependencies/eng10026_publisher
+[25.093s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/ament_index/resource_index/parent_prefix_path/eng10026_publisher
+[25.094s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/environment/ament_prefix_path.sh
+[25.095s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/environment/ament_prefix_path.dsv
+[25.095s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/environment/path.sh
+[25.095s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/environment/path.dsv
+[25.095s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/local_setup.bash
+[25.096s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/local_setup.sh
+[25.096s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/local_setup.zsh
+[25.096s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/local_setup.dsv
+[25.096s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/package.dsv
+[25.097s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/ament_index/resource_index/packages/eng10026_publisher
+[25.097s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/cmake/eng10026_publisherConfig.cmake
+[25.097s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/cmake/eng10026_publisherConfig-version.cmake
+[25.098s] -- Installing: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/package.xml
+[25.099s] Invoked command in '/home/ros/colcon_ws/build/eng10026_publisher' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_publisher

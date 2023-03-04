@@ -1,0 +1,70 @@
+[0.019s] Invoking command in '/home/ros/colcon_ws/build/q4d_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/src/q4d_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/q4d_description
+[0.067s] -- The C compiler identification is GNU 11.3.0
+[0.118s] -- The CXX compiler identification is GNU 11.3.0
+[0.123s] -- Detecting C compiler ABI info
+[0.175s] -- Detecting C compiler ABI info - done
+[0.185s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.185s] -- Detecting C compile features
+[0.186s] -- Detecting C compile features - done
+[0.189s] -- Detecting CXX compiler ABI info
+[0.256s] -- Detecting CXX compiler ABI info - done
+[0.261s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.261s] -- Detecting CXX compile features
+[0.261s] -- Detecting CXX compile features - done
+[0.263s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.413s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.466s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.483s] -- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)
+[0.529s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.533s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.542s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.556s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.576s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.651s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.653s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.753s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.780s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.828s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.841s] -- Looking for pthread.h
+[0.918s] -- Looking for pthread.h - found
+[0.918s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.008s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.010s] -- Found Threads: TRUE  
+[1.249s] -- Found tf2_ros: 0.25.2 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.847s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.056s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.056s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ros/colcon_ws/src/q4d_description/include>
+[2.056s] -- Configured cppcheck exclude dirs and/or files: 
+[2.057s] -- Added test 'lint_cmake' to check CMake code style
+[2.058s] -- Added test 'uncrustify' to check C / C++ code style
+[2.058s] -- Configured uncrustify additional arguments: 
+[2.059s] -- Added test 'xmllint' to check XML markup files
+[2.060s] -- Configuring done
+[2.075s] -- Generating done
+[2.081s] -- Build files have been written to: /home/ros/colcon_ws/build/q4d_description
+[2.099s] Invoked command in '/home/ros/colcon_ws/build/q4d_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/src/q4d_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/q4d_description
+[2.100s] Invoking command in '/home/ros/colcon_ws/build/q4d_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_description -- -j3 -l3
+[2.212s] [ 50%] [32mBuilding CXX object CMakeFiles/point_map.dir/src/point_map.cpp.o[0m
+[2.270s] [100%] [32m[1mLinking CXX executable point_map[0m
+[2.615s] [100%] Built target point_map
+[2.623s] Invoked command in '/home/ros/colcon_ws/build/q4d_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_description -- -j3 -l3
+[2.658s] Invoking command in '/home/ros/colcon_ws/build/q4d_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q4d_description
+[2.671s] -- Install configuration: ""
+[2.672s] -- Execute custom install script
+[2.672s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/lib/q4d_description/point_map
+[2.680s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/ament_index/resource_index/package_run_dependencies/q4d_description
+[2.704s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/ament_index/resource_index/parent_prefix_path/q4d_description
+[2.714s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/ament_prefix_path.sh
+[2.721s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/ament_prefix_path.dsv
+[2.728s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/path.sh
+[2.737s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/path.dsv
+[2.744s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.bash
+[2.752s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.sh
+[2.759s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.zsh
+[2.766s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.dsv
+[2.775s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.dsv
+[2.786s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/ament_index/resource_index/packages/q4d_description
+[2.808s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/cmake/q4d_descriptionConfig.cmake
+[2.819s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/cmake/q4d_descriptionConfig-version.cmake
+[2.827s] -- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.xml
+[2.838s] Invoked command in '/home/ros/colcon_ws/build/q4d_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q4d_description

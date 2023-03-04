@@ -1,0 +1,10 @@
+/home/ros/colcon_ws/build/eng10026_subscriber/CMakeFiles/uninstall.dir
+/home/ros/colcon_ws/build/eng10026_subscriber/CMakeFiles/eng10026_subscriber_uninstall.dir
+/home/ros/colcon_ws/build/eng10026_subscriber/CMakeFiles/click_subscriber.dir
+/home/ros/colcon_ws/build/eng10026_subscriber/CMakeFiles/test.dir
+/home/ros/colcon_ws/build/eng10026_subscriber/CMakeFiles/edit_cache.dir
+/home/ros/colcon_ws/build/eng10026_subscriber/CMakeFiles/rebuild_cache.dir
+/home/ros/colcon_ws/build/eng10026_subscriber/CMakeFiles/list_install_components.dir
+/home/ros/colcon_ws/build/eng10026_subscriber/CMakeFiles/install.dir
+/home/ros/colcon_ws/build/eng10026_subscriber/CMakeFiles/install/local.dir
+/home/ros/colcon_ws/build/eng10026_subscriber/CMakeFiles/install/strip.dir

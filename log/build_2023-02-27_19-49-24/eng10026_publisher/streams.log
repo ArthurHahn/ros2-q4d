@@ -1,0 +1,26 @@
+[0.019s] Invoking command in '/home/ros/colcon_ws/build/eng10026_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_publisher -- -j3 -l3
+[0.135s] [100%] Built target p2_publisher
+[0.152s] Invoked command in '/home/ros/colcon_ws/build/eng10026_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_publisher -- -j3 -l3
+[0.169s] Invoking command in '/home/ros/colcon_ws/build/eng10026_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_publisher
+[0.174s] -- Install configuration: ""
+[0.175s] -- Execute custom install script
+[0.176s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/lib/eng10026_publisher/p2_publisher
+[0.177s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/launch/display.launch.xml
+[0.177s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/launch/p2.launch.xml
+[0.178s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/config/p1_p2.rviz
+[0.179s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/ament_index/resource_index/package_run_dependencies/eng10026_publisher
+[0.179s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/ament_index/resource_index/parent_prefix_path/eng10026_publisher
+[0.180s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/environment/ament_prefix_path.sh
+[0.180s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/environment/ament_prefix_path.dsv
+[0.180s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/environment/path.sh
+[0.181s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/environment/path.dsv
+[0.181s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/local_setup.bash
+[0.181s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/local_setup.sh
+[0.182s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/local_setup.zsh
+[0.182s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/local_setup.dsv
+[0.182s] -- Symlinking: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/package.dsv
+[0.189s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/ament_index/resource_index/packages/eng10026_publisher
+[0.189s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/cmake/eng10026_publisherConfig.cmake
+[0.192s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/cmake/eng10026_publisherConfig-version.cmake
+[0.192s] -- Up-to-date symlink: /home/ros/colcon_ws/install/eng10026_publisher/share/eng10026_publisher/package.xml
+[0.212s] Invoked command in '/home/ros/colcon_ws/build/eng10026_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_publisher

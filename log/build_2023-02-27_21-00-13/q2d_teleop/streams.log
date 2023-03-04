@@ -1,0 +1,30 @@
+[0.015s] Invoking command in '/home/ros/colcon_ws/build/q2d_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q2d_teleop -- -j3 -l3
+[0.078s] [100%] Built target q2d_teleop_tablet
+[0.078s] [100%] Built target q2d_teleop_rviz
+[0.091s] Invoked command in '/home/ros/colcon_ws/build/q2d_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q2d_teleop -- -j3 -l3
+[0.142s] Invoking command in '/home/ros/colcon_ws/build/q2d_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q2d_teleop
+[0.148s] -- Install configuration: ""
+[0.148s] -- Execute custom install script
+[0.149s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/lib/q2d_teleop/q2d_teleop_tablet
+[0.149s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/lib/q2d_teleop/q2d_teleop_rviz
+[0.149s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/launch/display.launch.xml
+[0.149s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/launch/gazebo.launch.xml
+[0.149s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/launch/q2d_teleop_rviz.launch.xml
+[0.149s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/launch/q2d_teleop_tablet.launch.xml
+[0.149s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/config/display.rviz
+[0.150s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/ament_index/resource_index/package_run_dependencies/q2d_teleop
+[0.150s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/ament_index/resource_index/parent_prefix_path/q2d_teleop
+[0.150s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/environment/ament_prefix_path.sh
+[0.150s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/environment/ament_prefix_path.dsv
+[0.150s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/environment/path.sh
+[0.150s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/environment/path.dsv
+[0.150s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/local_setup.bash
+[0.151s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/local_setup.sh
+[0.151s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/local_setup.zsh
+[0.151s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/local_setup.dsv
+[0.151s] -- Symlinking: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/package.dsv
+[0.156s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/ament_index/resource_index/packages/q2d_teleop
+[0.156s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/cmake/q2d_teleopConfig.cmake
+[0.156s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/cmake/q2d_teleopConfig-version.cmake
+[0.161s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q2d_teleop/share/q2d_teleop/package.xml
+[0.173s] Invoked command in '/home/ros/colcon_ws/build/q2d_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q2d_teleop

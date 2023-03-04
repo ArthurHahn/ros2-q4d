@@ -1,0 +1,3 @@
+<launch>
+<node name="rviz" pkg="rviz2" exec="rviz2" args="−d $(find-pkg-share eng10026_tf2)/config/eng10026_tf2.rviz"/>
+</launch>

@@ -1,0 +1,4 @@
+Invoking command in '/home/ros/colcon_ws/build/q4d_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_description -- -j3 -l3
+Invoked command in '/home/ros/colcon_ws/build/q4d_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_description -- -j3 -l3
+Invoking command in '/home/ros/colcon_ws/build/q4d_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q4d_description
+Invoked command in '/home/ros/colcon_ws/build/q4d_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q4d_description

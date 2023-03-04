@@ -1,0 +1,29 @@
+[0.022s] Invoking command in '/home/ros/colcon_ws/build/q4d_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_teleop -- -j3 -l3
+[0.064s] [35m[1mConsolidate compiler generated dependencies of target q4d_teleop_rviz[0m
+[0.081s] [ 50%] [32mBuilding CXX object CMakeFiles/q4d_teleop_rviz.dir/src/q4d_teleop_rviz.cpp.o[0m
+[11.374s] [100%] [32m[1mLinking CXX executable q4d_teleop_rviz[0m
+[11.969s] [100%] Built target q4d_teleop_rviz
+[11.975s] Invoked command in '/home/ros/colcon_ws/build/q4d_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_teleop -- -j3 -l3
+[11.991s] Invoking command in '/home/ros/colcon_ws/build/q4d_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q4d_teleop
+[11.996s] -- Install configuration: ""
+[11.997s] -- Execute custom install script
+[11.997s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/lib/q4d_teleop/q4d_teleop_rviz
+[11.997s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/launch/display.launch.xml
+[11.997s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/launch/q4d_teleop_rviz.launch.xml
+[11.997s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/config/display.rviz
+[11.998s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/ament_index/resource_index/package_run_dependencies/q4d_teleop
+[11.998s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/ament_index/resource_index/parent_prefix_path/q4d_teleop
+[11.998s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/environment/ament_prefix_path.sh
+[11.998s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/environment/ament_prefix_path.dsv
+[11.998s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/environment/path.sh
+[11.999s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/environment/path.dsv
+[11.999s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/local_setup.bash
+[11.999s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/local_setup.sh
+[11.999s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/local_setup.zsh
+[11.999s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/local_setup.dsv
+[11.999s] -- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.dsv
+[12.005s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/ament_index/resource_index/packages/q4d_teleop
+[12.005s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/cmake/q4d_teleopConfig.cmake
+[12.005s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/cmake/q4d_teleopConfig-version.cmake
+[12.005s] -- Up-to-date symlink: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.xml
+[12.009s] Invoked command in '/home/ros/colcon_ws/build/q4d_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q4d_teleop

@@ -1,0 +1,25 @@
+[35m[1mConsolidate compiler generated dependencies of target q4d_teleop_rviz[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/q4d_teleop_rviz.dir/src/q4d_teleop_rviz.cpp.o[0m
+[100%] [32m[1mLinking CXX executable q4d_teleop_rviz[0m
+[100%] Built target q4d_teleop_rviz
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/lib/q4d_teleop/q4d_teleop_rviz
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/launch/display.launch.xml
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/launch/q4d_teleop_rviz.launch.xml
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/config/display.rviz
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/ament_index/resource_index/package_run_dependencies/q4d_teleop
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/ament_index/resource_index/parent_prefix_path/q4d_teleop
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/environment/ament_prefix_path.sh
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/environment/path.sh
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/environment/path.dsv
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/local_setup.bash
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/local_setup.sh
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/local_setup.zsh
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/local_setup.dsv
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.dsv
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/ament_index/resource_index/packages/q4d_teleop
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/cmake/q4d_teleopConfig.cmake
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/cmake/q4d_teleopConfig-version.cmake
+-- Symlinking: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.xml

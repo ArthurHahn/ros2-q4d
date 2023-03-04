@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target q4d_teleop_rviz[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/q4d_teleop_rviz.dir/src/q4d_teleop_rviz.cpp.o[0m
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:[m[K In member function ‘[01m[Kvoid Q4dTeleop::clickCB(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:121:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope; did you mean ‘[01m[Kgoal_[m[K’?
+  121 |         [01;31m[Kgoal[m[K = KDL::Frame(KDL::Rotation::Quaternion(click->pose.orientation.x,
+      |         [01;31m[K^~~~[m[K
+      |         [32m[Kgoal_[m[K
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:125:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose[m[K’ was not declared in this scope
+  125 |                           KDL::Vector(click>[01;31m[Kpose[m[K.position.x,click>pose.position.y,click->pose.position.z));
+      |                                             [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/q4d_teleop_rviz.dir/build.make:76: CMakeFiles/q4d_teleop_rviz.dir/src/q4d_teleop_rviz.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/q4d_teleop_rviz.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
