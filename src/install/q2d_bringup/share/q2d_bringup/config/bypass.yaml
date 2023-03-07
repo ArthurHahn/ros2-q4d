@@ -1,0 +1,11 @@
+/shoulder_controller:
+        ros__parameters:
+                joints:
+                        - shoulder_active_joint
+                interface_name: effort
+
+/elbow_controller:
+        ros__parameters:
+                joints:
+                        - elbow_active_joint
+                interface_name: effort

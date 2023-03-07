@@ -1,0 +1,7 @@
+/group_controller:
+        ros__parameters:
+                joints:
+                        - shoulder_active_joint
+                        - elbow_active_joint
+                shoulder_active_joint/pid: {p: 2310, i: 4640, d: 0.299}
+                elbow_active_joint/pid: {p: 339, i: 851, d: 0.351}

@@ -1,0 +1,5 @@
+/group_controller:
+        ros__parameters:
+                joints: 
+                        - shoulder_active_joint
+                        - elbow_active_joint

@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<robot name="q2d">
+
+	<link name="origin_link"/>
+
+	<link name="base_link">
+		<inertial>
+			<origin xyz="0.074571214 -0.00008502114 0.039600060500000"/>
+			<mass value="6.9621272394"/>
+			<inertia ixx="0.12983348950453222" ixy="0.00004414079177225"
+				ixz="-0.03019200341025967" iyy="0.17857934382693791"
+				iyz="0.00000393635720902" izz="0.25812143874621400" />
+		</inertial>
+
+		<visual>
+			<geometry>
+				<mesh filename="package://q2d_description/meshes/base.STL"/>
+			</geometry>
+			<material name="base_material">
+				<color rgba="0.55 0.45 0.45 1.0"/>
+			</material>
+		</visual>
+
+		<collision>
+			<geometry>
+				<mesh filename="package://q2d_description/meshes/base.STL"/>
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="origin_joint" type="fixed">
+		<parent link="origin_link"/>
+		<child link="base_link"/>
+	</joint>
+
+	<link name="shoulder_active_link">
+		<inertial>
+			<origin xyz="0.0252456823 -0.00000002723 0.06470401873"/>
+			<mass value="0.19730261508"/>
+			<inertia ixx="0.00038685518702305" ixy="0.00000000055222416"
+				ixz="-0.00000031340718614" iyy="0.00010241438913870"
+				iyz="-0.00000000015426019" izz="0.00047879093657893" />
+		</inertial>
+
+		<visual>
+			<geometry>
+				<mesh filename="package://q2d_description/meshes/shoulder_active.STL"/>
+			</geometry>
+			<material name="shoulder_active_material">
+				<color rgba="0.55 0.55 0.45 1.0"/>
+			</material>
+		</visual>
+
+		<collision>
+			<geometry>
+				<mesh filename="package://q2d_description/meshes/collision/shoulder_active.STL"/>
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="shoulder_active_joint" type="revolute">
+		<parent link="base_link"/>
+		<child link="shoulder_active_link"/>
+		<origin xyz="0 0 0.1477"/>
+		<axis xyz="0 0 1"/>
+		<limit lower="-1.570796326794897" upper="1.570796326794897"
+			velocity="2.27" effort="27.94" />			
+		<dynamics damping="29.7914" />
+	</joint>
+
+	<link name="shoulder_passive_link">
+		<inertial>
+			<mass value="1.26475817816"/>
+			<origin xyz="0.16516344805 -0.00048428845 -0.00016382412"/>
+			<inertia ixx="0.00346199967740929" ixy="-0.00010902049981923"
+				ixz="-0.00401182173261703" iyy="0.03314904030482527"
+				iyz="0.00005087359051462" izz="0.03113579694057124" />
+		</inertial>
+
+		<visual>
+			<geometry>
+				<mesh filename="package://q2d_description/meshes/shoulder_passive.STL"/>
+			</geometry>
+			<material name="shoulder_passive_material">
+				<color rgba="0.45 0.55 0.45 1.0"/>
+			</material>
+		</visual>
+
+		<collision>
+			<geometry>
+				<mesh filename="package://q2d_description/meshes/collision/shoulder_passive.STL"/>
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="shoulder_passive_joint" type="fixed">
+		<parent link="shoulder_active_link"/>
+		<child link="shoulder_passive_link"/>
+	</joint>
+
+	<link name="elbow_active_link">
+		<inertial>
+			<mass value="0.19712951877"/>
+			<origin xyz="0.02548273493 -0.00000002263 0.05254513577"/>
+			<inertia ixx="0.00038850510800265" ixy="0.00000000052121416"
+				ixz="0.00000404728675587" iyy="0.00010146693248154"
+				iyz="0.00000000002789435" izz="0.00048091942023028" />
+		</inertial>
+
+		<visual>
+			<geometry>
+				<mesh filename="package://q2d_description/meshes/elbow_active.STL"/>
+			</geometry>
+			<material name="elbow_active_material">
+				<color rgba="0.45 0.55 0.55 1.0"/>
+			</material>
+		</visual>
+
+		<collision>
+			<geometry>
+				<mesh filename="package://q2d_description/meshes/collision/elbow_active.STL"/>
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="elbow_active_joint" type="revolute">
+		<parent link="shoulder_passive_link"/>
+		<child link="elbow_active_link"/>
+		<origin xyz="0.343 0 0"/>
+		<axis xyz="0 0 1"/>
+		<limit lower="-1.570796326794897" upper="1.570796326794897"
+			velocity="23.08" effort="13.62" />
+		<dynamics damping="2.6404" />
+	</joint>
+
+	<link name="elbow_passive_link">
+		<inertial>
+			<mass value="0.67529215765"/>
+			<origin xyz="0.06204831581 0.00000013809 0.01489882531"/>
+			<inertia ixx="0.00132247071698947" ixy="-0.00000000605403474"
+				ixz="-0.00090893541574333" iyy="0.00774007102253750"
+				iyz="0.00000000624688369" izz="0.00751638349361413" />
+		</inertial>
+
+		<visual>
+			<geometry>
+				<mesh filename="package://q2d_description/meshes/elbow_passive.STL"/>
+			</geometry>
+			<material name="elbow_passive_material">
+				<color rgba="0.45 0.45 0.55 1.0"/>
+			</material>
+		</visual>
+
+		<collision>
+			<geometry>
+				<mesh filename="package://q2d_description/meshes/collision/elbow_passive.STL"/>
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="elbow_passive_joint" type="fixed">
+		<parent link="elbow_active_link"/>
+		<child link="elbow_passive_link"/>
+	</joint>
+
+	<link name="tool_link"/>
+
+	<joint name="end_joint" type="fixed">
+		<parent link="elbow_passive_link"/>
+		<child link="tool_link"/>
+		<origin xyz="0.267 0 0"/>
+	</joint>
+
+	<transmission name="shoulder_active_transmission">
+		<type>transmission_interface/SimpleTransmission</type>
+		<joint name="shoulder_active_joint">
+			<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+		</joint>
+		<actuator name="shoulder_motor">
+			<mechanicalReduction>1</mechanicalReduction>
+		</actuator>
+	</transmission>
+
+	<transmission name="elbow_active_transmission">
+		<type>transmission_interface/SimpleTransmission</type>
+		<joint name="elbow_active_joint">
+			<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+		</joint>
+		<actuator name="elbow_motor">
+			<mechanicalReduction>1</mechanicalReduction>
+		</actuator>
+	</transmission>
+
+	<gazebo reference="base_link">
+		<visual>
+			<material>
+				<ambient>0.55 0.45 0.45 1.0</ambient>
+				<diffuse>0.55 0.45 0.45 1.0</diffuse>
+				<specular>0.55 0.45 0.45 1.0</specular>
+				<emissive>0.0 0.0 0.0 0.0</emissive>
+			</material>
+		</visual>
+	</gazebo>
+
+	<gazebo reference="shoulder_active_link">
+		<visual>
+			<material>
+				<ambient>0.55 0.55 0.45 1.0</ambient>
+				<diffuse>0.55 0.55 0.45 1.0</diffuse>
+				<specular>0.55 0.55 0.45 1.0</specular>
+				<emissive>0.0 0.0 0.0 0.0</emissive>
+			</material>
+		</visual>
+	</gazebo>
+
+	<gazebo reference="shoulder_passive_link">
+		<visual>
+			<material>
+				<ambient>0.55 0.45 0.45 1.0</ambient>
+				<diffuse>0.55 0.45 0.45 1.0</diffuse>
+				<specular>0.55 0.45 0.45 1.0</specular>
+				<emissive>0.0 0.0 0.0 0.0</emissive>
+			</material>
+		</visual>
+	</gazebo>
+
+	<gazebo reference="elbow_active_link">
+		<visual>
+			<material>
+				<ambient>0.45 0.55 0.55 1.0</ambient>
+				<diffuse>0.45 0.55 0.55 1.0</diffuse>
+				<specular>0.45 0.55 0.55 1.0</specular>
+				<emissive>0.0 0.0 0.0 0.0</emissive>
+			</material>
+		</visual>
+	</gazebo>
+
+	<gazebo reference="elbow_passive_link">
+		<visual>
+			<material>
+				<ambient>0.45 0.45 0.45 1.0</ambient>
+				<diffuse>0.45 0.45 0.45 1.0</diffuse>
+				<specular>0.45 0.45 0.45 1.0</specular>
+				<emissive>0.0 0.0 0.0 0.0</emissive>
+			</material>
+		</visual>
+	</gazebo>
+
+	<ros2_control name="GazeboSystem" type="system">
+		<hardware>
+			<plugin>gazebo_ros2_control/GazeboSystem</plugin>
+		</hardware>
+
+ 		<joint name="shoulder_active_joint">
+			<command_interface name="effort">
+				<param name="min">-27.94</param>
+				<param name="max">27.94</param>
+			</command_interface>
+			<state_interface name="position"/>
+			<state_interface name="velocity"/>
+			<state_interface name="effort"/>
+		</joint>
+      
+		<joint name="elbow_active_joint">
+			<command_interface name="effort">
+				<param name="min">-13.62</param>
+				<param name="max">13.62</param>
+			</command_interface>
+			<state_interface name="position"/>
+			<state_interface name="velocity"/>
+			<state_interface name="effort"/>
+		</joint>
+	</ros2_control>
+
+	<gazebo>
+		<plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+			<robot_param>robot_description</robot_param>
+			<robot_param_node>robot_state_publisher</robot_param_node>
+			<parameters>$(find q2d_description)/config/controller_manager.yaml</parameters>
+		</plugin>
+	</gazebo>
+<!--
+	<ros2_control name="IgnitionSystem" type="system">
+		<hardware>
+			<plugin>ign_ros2_control/IgnitionSystem</plugin>
+		</hardware>
+
+		<joint name="shoulder_active_joint">
+			<command_interface name="effort">
+				<param name="min">-27.94</param>
+				<param name="max">27.94</param>
+			</command_interface>
+			<state_interface name="position"/>
+			<state_interface name="velocity"/>
+			<state_interface name="effort"/>
+		</joint>
+
+		<joint name="elbow_active_joint">
+			<command_interface name="effort">
+				<param name="min">-13.62</param>
+				<param name="max">13.62</param>
+			</command_interface>
+			<state_interface name="position"/>
+			<state_interface name="velocity"/>
+			<state_interface name="effort"/>
+		</joint>
+	</ros2_control>
+
+	<gazebo>
+		<plugin filename="libign_ros2_control-system.so" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+			<robot_param>robot_description</robot_param>
+			<robot_param_node>robot_state_publisher</robot_param_node>
+			<parameters>$(find q2d_description)/config/controller_manager.yaml</parameters>
+		</plugin>
+	</gazebo>
+-->
+</robot>
