@@ -1,1 +1,1 @@
-/home/ros/colcon_ws/src/q2d/q2d_bringup/scripts/ijc_step.sh
+/home/ros2/colcon_ws/src/q2d/q2d_bringup/scripts/ijc_step.sh

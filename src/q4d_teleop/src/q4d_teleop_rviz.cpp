@@ -31,6 +31,8 @@
 #include <kdl/chainiksolverpos_lma.hpp>
 #include <kdl_parser/kdl_parser.hpp>
 #include <kdl/frames.hpp>
+#include <thread>
+#include <chrono>
 
 #define sqr(x) ((x)*(x))
 
@@ -40,20 +42,21 @@ class Q4dTeleop: public rclcpp::Node
 	Q4dTeleop(void);
 	~Q4dTeleop(void);
 	void publish(void);
+	void hCB(const std_msgs::msg::Float64::SharedPtr msg);
 			
 	private:
-	//rclcpp::Subscription<geometry_msgs::msg::PointStamped>::SharedPtr clickSub_;
-	rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr clickSub_;
-	rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr jointStatePub_; //MUDAR "JointState"
-	//rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr shoulderCmdPub_;
-	//rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr elbowCmdPub_;
+	rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr clSub_;
+	rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr jsPub_;
+	rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr hSub_; 
+	// rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr grpPub_; 
 	
 	KDL::Frame goal_;
 	
 	double row;
 	double pitch;
 	double yaw;
-	
+	double h_;
+
 	sensor_msgs::msg::JointState joint_state;
 
 	std::string robotDescription_;
@@ -67,10 +70,11 @@ class Q4dTeleop: public rclcpp::Node
 
 Q4dTeleop::Q4dTeleop(void): Node("Q4d_teleop_rviz"), q_(2)
 {
-	clickSub_=create_subscription<geometry_msgs::msg::PoseStamped>("goal_pose" , 100,std::bind(&Q4dTeleop::clickCB,this,std::placeholders::_1));
-	jointStatePub_ =create_publisher<sensor_msgs::msg::JointState>("joint_states",100); //MUDAR "JointState"
-	//shoulderCmdPub_=create_publisher<std_msgs::msg::Float64>("shoulder_controller/command",100);
-	//elbowCmdPub_=create_publisher<std_msgs::msg::Float64>("elbow_controller/command",100);
+	clSub_=create_subscription<geometry_msgs::msg::PoseStamped>("goal_pose",100,std::bind(&Q4dTeleop::clickCB,this,std::placeholders::_1));
+	jsPub_=create_publisher<sensor_msgs::msg::JointState>("joint_states",100); 
+	hSub_=create_subscription<std_msgs::msg::Float64>("height",100,std::bind(&Q4dTeleop::hCB,this,std::placeholders::_1)); 
+	// grpPub_=create_publisher<sensor_msgs::msg::JointState>("gripper",100); 
+	
 	
 	joint_state.name.resize(5);
 	
@@ -95,14 +99,12 @@ Q4dTeleop::Q4dTeleop(void): Node("Q4d_teleop_rviz"), q_(2)
 	if (!kdl_parser::treeFromString(robotDescription_,tree))
 		RCLCPP_ERROR_STREAM(get_logger(),"Failed to construct KDL tree.");
 		
-	if (!tree.getChain("origin_link","tool_link",chain_))
+	if (!tree.getChain("origin_link","revolute_link",chain_))
 		RCLCPP_ERROR_STREAM(get_logger(),"Failed to get chain from KDL tree.");
 
 	q_.resize(chain_.getNrOfJoints());
 
 	//goal_.Identity();
-	goal_.p.x(0.61); //somar x <------------------------
-	goal_.p.z(0.1477); //somar z <------------------------
 	
 	Eigen::Matrix<double,6,1> L;
 	L << 1.0 , 1.0 , 1.0, 0.01, 0.01, 0.01;
@@ -139,25 +141,45 @@ void Q4dTeleop::robotDescriptionCB(const std_msgs::msg::String::SharedPtr robotD
 	robotDescription_=robotDescription->data;
 }
 
+void Q4dTeleop::hCB(const std_msgs::msg::Float64::SharedPtr msg){
+
+	h_ = msg->data;
+}
+
 //#define KDL_IK
 void Q4dTeleop::publish(void)
 {
 //#ifdef KDL_IK
-	KDL::JntArray q_out=q_;
+	KDL::JntArray q_o=q_;
 	int error=0;
-	if((error=ikSolverPos_->CartToJnt(q_,goal_,q_out)) < 0)
+	if((error=ikSolverPos_->CartToJnt(q_,goal_,q_o)) < 0)
 		RCLCPP_ERROR_STREAM(get_logger(),"Failed to compute invere kinematics: (" << error << ") "
 			<< ikSolverPos_->strError(error));
-	q_=q_out;
+	// q_=q_out;
 	
-	joint_state.header.stamp = now();
-	joint_state.position[0] = q_(0);
-	joint_state.position[1] = q_(1);
-	joint_state.position[2] = 0;
-	joint_state.position[3] = yaw;
-	joint_state.position[4] = 0;
+
+	double h = h_;
+	double g_yaw = yaw - q_o(0) - q_o(1);
+	double qzero = (q_o(0) - q_(0))/100;
+	double qum = (q_o(1) - q_(1))/100;
+	double yaw_diff = (g_yaw - yaw)/100;
+
+	for(int j = 0; j<=100; j++){
+
+		joint_state.header.stamp = now();
+		joint_state.position[0] = q_(0) + qzero * j;
+		joint_state.position[1] = q_(1) + qum * j;
+		joint_state.position[2] = h;
+		joint_state.position[3] = yaw + yaw_diff * j;
+		joint_state.position[4] = 0;
+
+		jsPub_->publish(joint_state);
+		std::this_thread::sleep_for(std::chrono::milliseconds(30));
+
+	}
+ 
+	q_=q_o;
 	
-	jointStatePub_->publish(joint_state);
 //#else
 	// Algebric inverse kinematics
 //	const double l1=0.343;

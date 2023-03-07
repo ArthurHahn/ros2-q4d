@@ -1,8 +1,8 @@
-# Install script for directory: /home/ros/colcon_ws/src/q4d_description
+# Install script for directory: /home/ros2/colcon_ws/src/q4d_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ros/colcon_ws/install/q4d_description")
+  set(CMAKE_INSTALL_PREFIX "/home/ros2/colcon_ws/install/q4d_description")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/ros/colcon_ws/build/q4d_description/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/ros2/colcon_ws/build/q4d_description/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ros/colcon_ws/build/q4d_description/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ros2/colcon_ws/build/q4d_description/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
