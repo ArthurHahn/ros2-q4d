@@ -1,0 +1,19 @@
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:[m[K In constructor ‘[01m[KQ4dTeleop::Q4dTeleop()[m[K’:
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:80:66:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KQ4dTeleop::create_subscription<sensor_msgs::msg::JointState>(const char [8], int)[m[K’
+   80 |         grpPub_=[01;31m[Kcreate_subscription<sensor_msgs::msg::JointState>("gripper",100)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:25[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+   92 | [01;36m[KNode[m[K::create_subscription(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:80:66:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 2 provided
+   80 |         grpPub_=[01;36m[Kcreate_subscription<sensor_msgs::msg::JointState>("gripper",100)[m[K;
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/q4d_teleop_rviz.dir/build.make:76: CMakeFiles/q4d_teleop_rviz.dir/src/q4d_teleop_rviz.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/q4d_teleop_rviz.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,4 @@
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:[m[K In member function ‘[01m[Kvoid Q4dTeleop::hCB(std_msgs::msg::Float64_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:148:16:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kh_delta[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  148 |         double [01;35m[Kh_delta[m[K;
+      |                [01;35m[K^~~~~~~[m[K

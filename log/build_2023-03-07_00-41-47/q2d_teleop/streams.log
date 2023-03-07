@@ -1,0 +1,9 @@
+[0.031s] Invoking command in '/home/ros/colcon_ws/build/q2d_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q2d_teleop -- -j3 -l3
+[0.062s] [35m[1mConsolidate compiler generated dependencies of target q2d_teleop_rviz[0m
+[0.067s] [35m[1mConsolidate compiler generated dependencies of target q2d_teleop_tablet[0m
+[0.078s] [ 25%] [32mBuilding CXX object CMakeFiles/q2d_teleop_rviz.dir/src/q2d_teleop_rviz.cpp.o[0m
+[0.084s] [ 50%] [32mBuilding CXX object CMakeFiles/q2d_teleop_tablet.dir/src/q2d_teleop_tablet.cpp.o[0m
+[11.701s] [ 75%] [32m[1mLinking CXX executable q2d_teleop_rviz[0m
+[11.771s] [100%] [32m[1mLinking CXX executable q2d_teleop_tablet[0m
+[12.387s] [100%] Built target q2d_teleop_rviz
+[12.425s] [100%] Built target q2d_teleop_tablet

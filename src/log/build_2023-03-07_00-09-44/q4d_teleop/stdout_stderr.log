@@ -1,0 +1,30 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/q4d_teleop_rviz.dir/src/q4d_teleop_rviz.cpp.o[0m
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:[m[K In member function ‘[01m[Kvoid Q4dTeleop::hCB(std_msgs::msg::Float64_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:148:16:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kh_delta[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  148 |         double [01;35m[Kh_delta[m[K;
+      |                [01;35m[K^~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable q4d_teleop_rviz[0m
+[100%] Built target q4d_teleop_rviz
+-- Install configuration: ""
+-- Installing: /home/ros/colcon_ws/src/install/q4d_teleop/lib/q4d_teleop/q4d_teleop_rviz
+-- Set runtime path of "/home/ros/colcon_ws/src/install/q4d_teleop/lib/q4d_teleop/q4d_teleop_rviz" to ""
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/launch
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/launch/q4d_teleop_rviz.launch.xml
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/launch/display.launch.xml
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/config
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/config/display.rviz
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/ament_index/resource_index/package_run_dependencies/q4d_teleop
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/ament_index/resource_index/parent_prefix_path/q4d_teleop
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/environment/path.sh
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/environment/path.dsv
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/local_setup.bash
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/local_setup.sh
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/local_setup.zsh
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/local_setup.dsv
+-- Installing: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/package.dsv
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/ament_index/resource_index/packages/q4d_teleop
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/cmake/q4d_teleopConfig.cmake
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/cmake/q4d_teleopConfig-version.cmake
+-- Up-to-date: /home/ros/colcon_ws/src/install/q4d_teleop/share/q4d_teleop/package.xml

@@ -1,0 +1,47 @@
+[0.018s] Invoking command in '/home/ros/colcon_ws/build/q4d_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/src/q4d_teleop -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/q4d_teleop
+[0.031s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.175s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.185s] -- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)
+[0.217s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.222s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.226s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.238s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.255s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.325s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.326s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.432s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.607s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.655s] -- Found kdl_parser: 2.6.4 (/opt/ros/humble/share/kdl_parser/cmake)
+[0.656s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.657s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.660s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.751s] -- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+[0.772s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.842s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.842s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.843s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ros/colcon_ws/src/q4d_teleop/include>
+[0.843s] -- Configured cppcheck exclude dirs and/or files: 
+[0.843s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.843s] -- Configured cpplint exclude dirs and/or files: 
+[0.844s] -- Added test 'lint_cmake' to check CMake code style
+[0.844s] -- Added test 'uncrustify' to check C / C++ code style
+[0.844s] -- Configured uncrustify additional arguments: 
+[0.844s] -- Added test 'xmllint' to check XML markup files
+[0.845s] -- Configuring done
+[0.856s] -- Generating done
+[0.858s] -- Build files have been written to: /home/ros/colcon_ws/build/q4d_teleop
+[0.866s] Invoked command in '/home/ros/colcon_ws/build/q4d_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/src/q4d_teleop -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/q4d_teleop
+[0.867s] Invoking command in '/home/ros/colcon_ws/build/q4d_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_teleop -- -j3 -l3
+[0.897s] [35m[1mConsolidate compiler generated dependencies of target q4d_teleop_rviz[0m
+[0.911s] [ 50%] [32mBuilding CXX object CMakeFiles/q4d_teleop_rviz.dir/src/q4d_teleop_rviz.cpp.o[0m
+[4.109s] [01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:166:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Q4dTeleop::cCB(std_msgs::msg::Float64_<std::allocator<void> >::SharedPtr)[m[K’
+[4.110s]   166 | void [01;31m[KQ4dTeleop[m[K::cCB(const std_msgs::msg::Float64::SharedPtr msg){ //interpolação garra
+[4.110s]       |      [01;31m[K^~~~~~~~~[m[K
+[4.110s] [01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:166:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Q4dTeleop::cCB(std_msgs::msg::Float64_<std::allocator<void> >::SharedPtr)[m[K’
+[4.110s] [01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:39:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Q4dTeleop[m[K’ defined here
+[4.110s]    39 | class [01;36m[KQ4dTeleop[m[K: public rclcpp::Node
+[4.110s]       |       [01;36m[K^~~~~~~~~[m[K
+[9.270s] gmake[2]: *** [CMakeFiles/q4d_teleop_rviz.dir/build.make:76: CMakeFiles/q4d_teleop_rviz.dir/src/q4d_teleop_rviz.cpp.o] Error 1
+[9.270s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/q4d_teleop_rviz.dir/all] Error 2
+[9.270s] gmake: *** [Makefile:146: all] Error 2
+[9.271s] Invoked command in '/home/ros/colcon_ws/build/q4d_teleop' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_teleop -- -j3 -l3

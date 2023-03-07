@@ -1,0 +1,29 @@
+[35m[1mConsolidate compiler generated dependencies of target q4d_teleop_rviz[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/q4d_teleop_rviz.dir/src/q4d_teleop_rviz.cpp.o[0m
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:[m[K In constructor ‘[01m[KQ4dTeleop::Q4dTeleop()[m[K’:
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:80:55:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’; did you mean ‘[01m[Kstd_msgs::msg::Float64[m[K’?
+   80 |         grpPub_=create_subscription<sensor_msgs::msg::[01;31m[KFloat64[m[K>("gripper",100,std::bind(&Q4dTeleop::cCB,this,std::placeholders::_1));
+      |                                                       [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/float64.hpp:7[m[K,
+                 from [01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:29[m[K:
+[01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:122:7:[m[K [01;36m[Knote: [m[K‘[01m[Kstd_msgs::msg::Float64[m[K’ declared here
+  122 | using [01;36m[KFloat64[m[K =
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:80:63:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KQ4dTeleop::create_subscription<<expression error> >(const char [8], int, std::_Bind_helper<false, void (Q4dTeleop::*)(std::shared_ptr<std_msgs::msg::Float64_<std::allocator<void> > >), Q4dTeleop*, const std::_Placeholder<1>&>::type)[m[K’
+   80 |         grpPub_=[01;31m[Kcreate_subscription<sensor_msgs::msg::Float64>("gripper",100,std::bind(&Q4dTeleop::cCB,this,std::placeholders::_1))[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:25[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+   92 | [01;36m[KNode[m[K::create_subscription(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:80:63:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   80 |         grpPub_=[01;31m[Kcreate_subscription<sensor_msgs::msg::Float64>("gripper",100,std::bind(&Q4dTeleop::cCB,this,std::placeholders::_1))[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/q4d_teleop_rviz.dir/build.make:76: CMakeFiles/q4d_teleop_rviz.dir/src/q4d_teleop_rviz.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/q4d_teleop_rviz.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

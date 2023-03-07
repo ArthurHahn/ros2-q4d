@@ -1,10 +1,1 @@
-/pid_plus_gravity_controller:
-        ros__parameters:
-                joints: 
-                        - shoulder_active_joint
-                        - elbow_active_joint
-                shoulder_active_joint: {p: 2310.0, i: 4640.0, d: 0.299, i_clamp_max: 27.94, i_clamp_min: -27.94}
-                elbow_active_joint: {p: 339.0, i: 851.0, d: 0.351, i_clamp_max: 13.62, i_clamp_min: -13.62}
-                gravity: {x: 0.0, y: 0.0, z: -9.8}
-                chain: {root: "origin_link", tip: "tool_link"}
-                priority: 99
+/home/ros/colcon_ws/src/q2d/q2d_bringup/config/pid_plus_gravity.yaml

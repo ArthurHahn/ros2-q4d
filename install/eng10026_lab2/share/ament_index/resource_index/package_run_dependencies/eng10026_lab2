@@ -1,1 +1,1 @@
-/home/ros/colcon_ws/build/eng10026_lab2/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/eng10026_lab2
+rclcpp;tf2_ros;geometry_msgs;ament_lint_auto;ament_lint_common

@@ -1,1 +1,0 @@
-/home/ros/colcon_ws/build/eng10026_publisher/ament_cmake_environment_hooks/local_setup.zsh

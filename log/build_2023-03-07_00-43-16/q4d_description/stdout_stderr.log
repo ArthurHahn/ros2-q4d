@@ -1,0 +1,27 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/config/display.rviz
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/launch/display.launch.xml
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/launch/q4d.launch.xml
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d.urdf.xacro
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d_aux.urdf.xacro
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d_claw.urdf.xacro
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d_claw_mimic.urdf.xacro
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d_prismatic.urdf.xacro
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d_revolute.urdf.xacro
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/q4d_description.dsv
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/ament_index/resource_index/package_run_dependencies/q4d_description
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/ament_index/resource_index/parent_prefix_path/q4d_description
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/path.sh
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/path.dsv
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.bash
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.sh
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.zsh
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.dsv
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.dsv
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/ament_index/resource_index/packages/q4d_description
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/cmake/q4d_descriptionConfig.cmake
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/cmake/q4d_descriptionConfig-version.cmake
+-- Symlinking: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.xml

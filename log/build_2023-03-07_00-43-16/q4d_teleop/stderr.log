@@ -1,0 +1,10 @@
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:166:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Q4dTeleop::cCB(std_msgs::msg::Float64_<std::allocator<void> >::SharedPtr)[m[K’
+  166 | void [01;31m[KQ4dTeleop[m[K::cCB(const std_msgs::msg::Float64::SharedPtr msg){ //interpolação garra
+      |      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:166:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Q4dTeleop::cCB(std_msgs::msg::Float64_<std::allocator<void> >::SharedPtr)[m[K’
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:39:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Q4dTeleop[m[K’ defined here
+   39 | class [01;36m[KQ4dTeleop[m[K: public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/q4d_teleop_rviz.dir/build.make:76: CMakeFiles/q4d_teleop_rviz.dir/src/q4d_teleop_rviz.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/q4d_teleop_rviz.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

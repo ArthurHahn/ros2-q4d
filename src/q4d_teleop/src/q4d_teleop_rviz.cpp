@@ -42,13 +42,12 @@ class Q4dTeleop: public rclcpp::Node
 	Q4dTeleop(void);
 	~Q4dTeleop(void);
 	void publish(void);
-	void hCB(const std_msgs::msg::Float64::SharedPtr msg);
 			
 	private:
 	rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr clSub_;
 	rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr jsPub_;
 	rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr hSub_; 
-	// rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr grpPub_; 
+	rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr grpSub_; 
 	
 	KDL::Frame goal_;
 	
@@ -56,6 +55,9 @@ class Q4dTeleop: public rclcpp::Node
 	double pitch;
 	double yaw;
 	double h_;
+	double h = 0;
+	double c_;
+	double c = 0;
 
 	sensor_msgs::msg::JointState joint_state;
 
@@ -66,15 +68,16 @@ class Q4dTeleop: public rclcpp::Node
 		
 	void clickCB(const geometry_msgs::msg::PoseStamped::SharedPtr click);
 	void robotDescriptionCB(const std_msgs::msg::String::SharedPtr robotDescription);
+	void hCB(const std_msgs::msg::Float64::SharedPtr msg);
+	void cCB(const std_msgs::msg::Float64::SharedPtr msg);
 };
 
 Q4dTeleop::Q4dTeleop(void): Node("Q4d_teleop_rviz"), q_(2)
 {
 	clSub_=create_subscription<geometry_msgs::msg::PoseStamped>("goal_pose",100,std::bind(&Q4dTeleop::clickCB,this,std::placeholders::_1));
 	jsPub_=create_publisher<sensor_msgs::msg::JointState>("joint_states",100); 
-	hSub_=create_subscription<std_msgs::msg::Float64>("height",100,std::bind(&Q4dTeleop::hCB,this,std::placeholders::_1)); 
-	// grpPub_=create_publisher<sensor_msgs::msg::JointState>("gripper",100); 
-	
+	hSub_=create_subscription<std_msgs::msg::Float64>("height",100,std::bind(&Q4dTeleop::hCB,this,std::placeholders::_1));
+	grpSub_=create_subscription<std_msgs::msg::Float64>("gripper",100,std::bind(&Q4dTeleop::cCB,this,std::placeholders::_1));  
 	
 	joint_state.name.resize(5);
 	
@@ -141,9 +144,42 @@ void Q4dTeleop::robotDescriptionCB(const std_msgs::msg::String::SharedPtr robotD
 	robotDescription_=robotDescription->data;
 }
 
-void Q4dTeleop::hCB(const std_msgs::msg::Float64::SharedPtr msg){
-
+void Q4dTeleop::hCB(const std_msgs::msg::Float64::SharedPtr msg){ //interpolação altura
+	
 	h_ = msg->data;
+	double h_delta;
+	h_delta = (h_- h)/100;
+	
+	for(int j = 0; j<=100; j++){
+
+		joint_state.header.stamp = now();
+		joint_state.position[2] = h + h_delta*j;
+		jsPub_->publish(joint_state);
+		std::this_thread::sleep_for(std::chrono::milliseconds(30));
+
+	}
+
+	h = h_;
+	
+}
+
+void Q4dTeleop::cCB(const std_msgs::msg::Float64::SharedPtr msg){ //interpolação garra
+
+	c_ = msg->data;
+	double c_delta;
+	c_delta = (c_- c)/100;
+	
+	for(int j = 0; j<=100; j++){
+
+		joint_state.header.stamp = now();
+		joint_state.position[4] = c + c_delta*j;
+		jsPub_->publish(joint_state);
+		std::this_thread::sleep_for(std::chrono::milliseconds(30));
+
+	}
+
+	c = c_;
+
 }
 
 //#define KDL_IK
@@ -157,8 +193,6 @@ void Q4dTeleop::publish(void)
 			<< ikSolverPos_->strError(error));
 	// q_=q_out;
 	
-
-	double h = h_;
 	double g_yaw = yaw - q_o(0) - q_o(1);
 	double qzero = (q_o(0) - q_(0))/100;
 	double qum = (q_o(1) - q_(1))/100;
@@ -169,10 +203,8 @@ void Q4dTeleop::publish(void)
 		joint_state.header.stamp = now();
 		joint_state.position[0] = q_(0) + qzero * j;
 		joint_state.position[1] = q_(1) + qum * j;
-		joint_state.position[2] = h;
 		joint_state.position[3] = yaw + yaw_diff * j;
-		joint_state.position[4] = 0;
-
+		
 		jsPub_->publish(joint_state);
 		std::this_thread::sleep_for(std::chrono::milliseconds(30));
 

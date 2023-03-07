@@ -1,0 +1,6 @@
+Invoking command in '/home/ros/colcon_ws/build/q4d_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/ros2-q4d/src/q4d_teleop -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/q4d_teleop
+Invoked command in '/home/ros/colcon_ws/build/q4d_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/ros2-q4d/src/q4d_teleop -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/q4d_teleop
+Invoking command in '/home/ros/colcon_ws/build/q4d_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_teleop -- -j3 -l3
+Invoked command in '/home/ros/colcon_ws/build/q4d_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_teleop -- -j3 -l3
+Invoking command in '/home/ros/colcon_ws/build/q4d_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q4d_teleop
+Invoked command in '/home/ros/colcon_ws/build/q4d_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q4d_teleop

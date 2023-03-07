@@ -1,3 +1,1 @@
-source;share/q2d_description/environment/ament_prefix_path.sh
-source;share/q2d_description/environment/path.sh
-source;share/q2d_description/environment/q2d_description.dsv
+/home/ros/colcon_ws/src/build/q2d_description/ament_cmake_environment_hooks/local_setup.dsv

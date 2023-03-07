@@ -1,0 +1,55 @@
+[0.012s] Invoking command in '/home/ros/colcon_ws/build/q4d_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/ros2-q4d/src/q4d_description -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/q4d_description
+[0.148s] -- The C compiler identification is GNU 11.3.0
+[0.228s] -- The CXX compiler identification is GNU 11.3.0
+[0.247s] -- Detecting C compiler ABI info
+[0.348s] -- Detecting C compiler ABI info - done
+[0.361s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.362s] -- Detecting C compile features
+[0.362s] -- Detecting C compile features - done
+[0.365s] -- Detecting CXX compiler ABI info
+[0.487s] -- Detecting CXX compiler ABI info - done
+[0.498s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.499s] -- Detecting CXX compile features
+[0.499s] -- Detecting CXX compile features - done
+[0.501s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.717s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.830s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.942s] -- Added test 'lint_cmake' to check CMake code style
+[0.947s] -- Added test 'xmllint' to check XML markup files
+[0.949s] -- Configuring done
+[0.952s] -- Generating done
+[0.953s] -- Build files have been written to: /home/ros/colcon_ws/build/q4d_description
+[0.960s] Invoked command in '/home/ros/colcon_ws/build/q4d_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/ros2-q4d/src/q4d_description -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/q4d_description
+[0.960s] Invoking command in '/home/ros/colcon_ws/build/q4d_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_description -- -j3 -l3
+[1.003s] Invoked command in '/home/ros/colcon_ws/build/q4d_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q4d_description -- -j3 -l3
+[1.037s] Invoking command in '/home/ros/colcon_ws/build/q4d_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q4d_description
+[1.043s] -- Install configuration: ""
+[1.043s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/config
+[1.043s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/config/display.rviz
+[1.043s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/launch
+[1.043s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/launch/display.launch.xml
+[1.043s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/launch/q4d.launch.xml
+[1.043s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf
+[1.043s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d_prismatic.urdf.xacro
+[1.043s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d_claw.urdf.xacro
+[1.044s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d_aux.urdf.xacro
+[1.044s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d.urdf.xacro
+[1.044s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d_revolute.urdf.xacro
+[1.044s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d_claw_mimic.urdf.xacro
+[1.044s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/q4d_description.dsv
+[1.044s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/ament_index/resource_index/package_run_dependencies/q4d_description
+[1.044s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/ament_index/resource_index/parent_prefix_path/q4d_description
+[1.044s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/ament_prefix_path.sh
+[1.044s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/ament_prefix_path.dsv
+[1.045s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/path.sh
+[1.045s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/path.dsv
+[1.045s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.bash
+[1.045s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.sh
+[1.045s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.zsh
+[1.045s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.dsv
+[1.045s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.dsv
+[1.045s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/ament_index/resource_index/packages/q4d_description
+[1.046s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/cmake/q4d_descriptionConfig.cmake
+[1.046s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/cmake/q4d_descriptionConfig-version.cmake
+[1.046s] -- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.xml
+[1.047s] Invoked command in '/home/ros/colcon_ws/build/q4d_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q4d_description

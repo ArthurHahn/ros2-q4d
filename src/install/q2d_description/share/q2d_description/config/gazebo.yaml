@@ -1,4 +1,1 @@
-gazebo:
-        ros__parameters:
-                # This is the /clock update rate
-                publish_rate: 1000.0
+/home/ros/colcon_ws/src/q2d/q2d_description/config/gazebo.yaml

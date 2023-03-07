@@ -1,10 +1,1 @@
-/computed_torque_controller:
-        ros__parameters:
-                joints: 
-                        - shoulder_active_joint
-                        - elbow_active_joint
-                Kp: [2500.0, 0.0, 0.0, 300.0]
-                Kd: [0.3, 0.0, 0.0, 0.3]
-                gravity: {x: 0.0, y: 0.0, z: -9.8}
-                chain: {root: "origin_link", tip: "tool_link"}
-                priority: 99
+/home/ros/colcon_ws/src/q2d/q2d_bringup/config/computed_torque.yaml

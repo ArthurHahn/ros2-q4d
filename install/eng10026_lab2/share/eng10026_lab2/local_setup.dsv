@@ -1,1 +1,2 @@
-/home/ros/colcon_ws/build/eng10026_lab2/ament_cmake_environment_hooks/local_setup.dsv
+source;share/eng10026_lab2/environment/ament_prefix_path.sh
+source;share/eng10026_lab2/environment/path.sh

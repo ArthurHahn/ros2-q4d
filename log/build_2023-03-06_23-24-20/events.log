@@ -1,0 +1,396 @@
+[0.000000] (-) TimerEvent: {}
+[0.000235] (eng10026_lab2) JobQueued: {'identifier': 'eng10026_lab2', 'dependencies': OrderedDict()}
+[0.000277] (q4d_description) JobQueued: {'identifier': 'q4d_description', 'dependencies': OrderedDict()}
+[0.000306] (q4d_teleop) JobQueued: {'identifier': 'q4d_teleop', 'dependencies': OrderedDict()}
+[0.000333] (eng10026_lab2) JobStarted: {'identifier': 'eng10026_lab2'}
+[0.013623] (q4d_description) JobStarted: {'identifier': 'q4d_description'}
+[0.020824] (q4d_teleop) JobStarted: {'identifier': 'q4d_teleop'}
+[0.023812] (eng10026_lab2) JobProgress: {'identifier': 'eng10026_lab2', 'progress': 'cmake'}
+[0.023864] (eng10026_lab2) Command: {'cmd': ['/usr/bin/cmake', '/home/ros/colcon_ws/ros2-q4d/src/eng10026_lab2', '-DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/eng10026_lab2'], 'cwd': '/home/ros/colcon_ws/build/eng10026_lab2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/ros/colcon_ws/ros2-q4d'), ('TERM_PROGRAM_VERSION', '1.76.0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/120/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1214'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ros'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-VirtualBox:@/tmp/.ICE-unix/1189,unix/ros-VirtualBox:/tmp/.ICE-unix/1189'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/10e562e7_fde4_4aec_92f9_d5ad062b9dc4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YAG701'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c752fda7e1.sock'), ('GNOME_TERMINAL_SERVICE', ':1.390'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/120/usr/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/colcon_ws/build/eng10026_lab2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.025198] (q4d_description) JobProgress: {'identifier': 'q4d_description', 'progress': 'cmake'}
+[0.025379] (q4d_description) Command: {'cmd': ['/usr/bin/cmake', '/home/ros/colcon_ws/ros2-q4d/src/q4d_description', '-DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/q4d_description'], 'cwd': '/home/ros/colcon_ws/build/q4d_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/ros/colcon_ws/ros2-q4d'), ('TERM_PROGRAM_VERSION', '1.76.0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/120/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1214'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ros'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-VirtualBox:@/tmp/.ICE-unix/1189,unix/ros-VirtualBox:/tmp/.ICE-unix/1189'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/10e562e7_fde4_4aec_92f9_d5ad062b9dc4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YAG701'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c752fda7e1.sock'), ('GNOME_TERMINAL_SERVICE', ':1.390'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/120/usr/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/colcon_ws/build/q4d_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.033003] (q4d_teleop) JobProgress: {'identifier': 'q4d_teleop', 'progress': 'cmake'}
+[0.033240] (q4d_teleop) Command: {'cmd': ['/usr/bin/cmake', '/home/ros/colcon_ws/ros2-q4d/src/q4d_teleop', '-DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/q4d_teleop'], 'cwd': '/home/ros/colcon_ws/build/q4d_teleop', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/ros/colcon_ws/ros2-q4d'), ('TERM_PROGRAM_VERSION', '1.76.0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/120/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1214'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ros'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-VirtualBox:@/tmp/.ICE-unix/1189,unix/ros-VirtualBox:/tmp/.ICE-unix/1189'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/10e562e7_fde4_4aec_92f9_d5ad062b9dc4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YAG701'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c752fda7e1.sock'), ('GNOME_TERMINAL_SERVICE', ':1.390'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/120/usr/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/colcon_ws/build/q4d_teleop'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.102729] (-) TimerEvent: {}
+[0.141381] (q4d_teleop) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.155740] (eng10026_lab2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.161580] (q4d_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.212383] (-) TimerEvent: {}
+[0.236696] (q4d_teleop) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.241375] (q4d_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.243640] (eng10026_lab2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.260639] (eng10026_lab2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.260848] (q4d_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.265456] (q4d_teleop) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.316726] (-) TimerEvent: {}
+[0.348964] (q4d_teleop) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.356607] (eng10026_lab2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.361733] (q4d_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.368779] (eng10026_lab2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.369433] (q4d_teleop) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.369874] (q4d_teleop) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.370945] (eng10026_lab2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.373171] (eng10026_lab2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.374555] (q4d_teleop) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.374988] (q4d_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.375373] (q4d_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.375661] (q4d_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.378770] (q4d_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.379078] (q4d_teleop) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.384993] (eng10026_lab2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.418047] (-) TimerEvent: {}
+[0.488478] (q4d_teleop) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.498613] (eng10026_lab2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.500555] (q4d_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.505374] (q4d_teleop) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.505853] (q4d_teleop) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.506494] (q4d_teleop) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.510572] (q4d_teleop) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.511835] (q4d_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.512178] (q4d_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.512822] (q4d_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.514666] (eng10026_lab2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.514894] (q4d_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.514998] (eng10026_lab2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.516086] (eng10026_lab2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.518019] (eng10026_lab2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.518110] (-) TimerEvent: {}
+[0.620990] (-) TimerEvent: {}
+[0.705702] (eng10026_lab2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[0.711065] (q4d_teleop) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[0.722349] (-) TimerEvent: {}
+[0.730866] (q4d_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[0.823340] (-) TimerEvent: {}
+[0.835535] (eng10026_lab2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.836164] (q4d_teleop) StdoutLine: {'line': b'-- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.843352] (q4d_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.917829] (q4d_teleop) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.918100] (eng10026_lab2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.925628] (-) TimerEvent: {}
+[0.928213] (eng10026_lab2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.937437] (q4d_teleop) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.947269] (q4d_teleop) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.947610] (eng10026_lab2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.955857] (q4d_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.960401] (q4d_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.963034] (q4d_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.965424] (q4d_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.966534] (q4d_description) StdoutLine: {'line': b'-- Build files have been written to: /home/ros/colcon_ws/build/q4d_description\n'}
+[0.973321] (q4d_description) CommandEnded: {'returncode': 0}
+[0.973779] (q4d_description) JobProgress: {'identifier': 'q4d_description', 'progress': 'build'}
+[0.973805] (q4d_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/colcon_ws/build/q4d_description', '--', '-j3', '-l3'], 'cwd': '/home/ros/colcon_ws/build/q4d_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/ros/colcon_ws/ros2-q4d'), ('TERM_PROGRAM_VERSION', '1.76.0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/120/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1214'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ros'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-VirtualBox:@/tmp/.ICE-unix/1189,unix/ros-VirtualBox:/tmp/.ICE-unix/1189'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/10e562e7_fde4_4aec_92f9_d5ad062b9dc4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YAG701'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c752fda7e1.sock'), ('GNOME_TERMINAL_SERVICE', ':1.390'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/120/usr/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/colcon_ws/build/q4d_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.976878] (q4d_teleop) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.977006] (eng10026_lab2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.011604] (eng10026_lab2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.016739] (q4d_description) CommandEnded: {'returncode': 0}
+[1.017239] (q4d_teleop) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.026111] (-) TimerEvent: {}
+[1.044168] (q4d_description) JobProgress: {'identifier': 'q4d_description', 'progress': 'install'}
+[1.050333] (q4d_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/colcon_ws/build/q4d_description'], 'cwd': '/home/ros/colcon_ws/build/q4d_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/ros/colcon_ws/ros2-q4d'), ('TERM_PROGRAM_VERSION', '1.76.0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/120/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1214'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ros'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-VirtualBox:@/tmp/.ICE-unix/1189,unix/ros-VirtualBox:/tmp/.ICE-unix/1189'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/10e562e7_fde4_4aec_92f9_d5ad062b9dc4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YAG701'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c752fda7e1.sock'), ('GNOME_TERMINAL_SERVICE', ':1.390'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/120/usr/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/colcon_ws/build/q4d_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.056356] (q4d_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.056565] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/config\n'}
+[1.056660] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/config/display.rviz\n'}
+[1.056754] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/launch\n'}
+[1.056822] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/launch/display.launch.xml\n'}
+[1.056881] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/launch/q4d.launch.xml\n'}
+[1.056970] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf\n'}
+[1.057038] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d_prismatic.urdf.xacro\n'}
+[1.057101] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d_claw.urdf.xacro\n'}
+[1.057193] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d_aux.urdf.xacro\n'}
+[1.057258] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d.urdf.xacro\n'}
+[1.057316] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d_revolute.urdf.xacro\n'}
+[1.057394] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/urdf/q4d_claw_mimic.urdf.xacro\n'}
+[1.057455] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/q4d_description.dsv\n'}
+[1.057570] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/ament_index/resource_index/package_run_dependencies/q4d_description\n'}
+[1.057727] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/ament_index/resource_index/parent_prefix_path/q4d_description\n'}
+[1.057857] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/ament_prefix_path.sh\n'}
+[1.058067] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/ament_prefix_path.dsv\n'}
+[1.058182] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/path.sh\n'}
+[1.058266] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/environment/path.dsv\n'}
+[1.058391] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.bash\n'}
+[1.058512] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.sh\n'}
+[1.058647] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.zsh\n'}
+[1.058802] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/local_setup.dsv\n'}
+[1.058938] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.dsv\n'}
+[1.059101] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/ament_index/resource_index/packages/q4d_description\n'}
+[1.059269] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/cmake/q4d_descriptionConfig.cmake\n'}
+[1.059405] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/cmake/q4d_descriptionConfig-version.cmake\n'}
+[1.059553] (q4d_description) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_description/share/q4d_description/package.xml\n'}
+[1.060906] (q4d_description) CommandEnded: {'returncode': 0}
+[1.123596] (q4d_description) JobEnded: {'identifier': 'q4d_description', 'rc': 0}
+[1.130158] (-) TimerEvent: {}
+[1.135432] (eng10026_lab2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.135579] (q4d_teleop) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.141281] (q4d_teleop) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.141727] (eng10026_lab2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.237746] (-) TimerEvent: {}
+[1.239048] (eng10026_lab2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.255856] (q4d_teleop) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.270889] (eng10026_lab2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.282457] (q4d_teleop) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.317578] (eng10026_lab2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.332475] (q4d_teleop) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.337236] (eng10026_lab2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.342757] (q4d_teleop) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.343043] (-) TimerEvent: {}
+[1.402707] (q4d_teleop) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.403446] (q4d_teleop) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.414098] (eng10026_lab2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.415239] (eng10026_lab2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.445763] (-) TimerEvent: {}
+[1.481370] (q4d_teleop) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.482598] (eng10026_lab2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.482926] (q4d_teleop) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.484144] (eng10026_lab2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.546531] (-) TimerEvent: {}
+[1.647126] (-) TimerEvent: {}
+[1.696482] (eng10026_lab2) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.2 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.696702] (q4d_teleop) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.747654] (-) TimerEvent: {}
+[1.756249] (q4d_teleop) StdoutLine: {'line': b'-- Found kdl_parser: 2.6.4 (/opt/ros/humble/share/kdl_parser/cmake)\n'}
+[1.766773] (q4d_teleop) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.768919] (q4d_teleop) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.769226] (q4d_teleop) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.775812] (q4d_teleop) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.848139] (-) TimerEvent: {}
+[1.881291] (q4d_teleop) StdoutLine: {'line': b'-- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)\n'}
+[1.918271] (q4d_teleop) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.965416] (-) TimerEvent: {}
+[1.998622] (q4d_teleop) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.999849] (q4d_teleop) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.000240] (q4d_teleop) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ros/colcon_ws/ros2-q4d/src/q4d_teleop/include>\n'}
+[2.000369] (q4d_teleop) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.001438] (q4d_teleop) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.001555] (q4d_teleop) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.002127] (q4d_teleop) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.003114] (q4d_teleop) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.003257] (q4d_teleop) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.003803] (q4d_teleop) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.005109] (q4d_teleop) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.016944] (q4d_teleop) StdoutLine: {'line': b'-- Generating done\n'}
+[2.018805] (q4d_teleop) StdoutLine: {'line': b'-- Build files have been written to: /home/ros/colcon_ws/build/q4d_teleop\n'}
+[2.030568] (q4d_teleop) CommandEnded: {'returncode': 0}
+[2.031178] (q4d_teleop) JobProgress: {'identifier': 'q4d_teleop', 'progress': 'build'}
+[2.031958] (q4d_teleop) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/colcon_ws/build/q4d_teleop', '--', '-j3', '-l3'], 'cwd': '/home/ros/colcon_ws/build/q4d_teleop', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/ros/colcon_ws/ros2-q4d'), ('TERM_PROGRAM_VERSION', '1.76.0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/120/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1214'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ros'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-VirtualBox:@/tmp/.ICE-unix/1189,unix/ros-VirtualBox:/tmp/.ICE-unix/1189'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/10e562e7_fde4_4aec_92f9_d5ad062b9dc4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YAG701'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c752fda7e1.sock'), ('GNOME_TERMINAL_SERVICE', ':1.390'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/120/usr/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/colcon_ws/build/q4d_teleop'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.066373] (-) TimerEvent: {}
+[2.080265] (q4d_teleop) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/q4d_teleop_rviz.dir/src/q4d_teleop_rviz.cpp.o\x1b[0m\n'}
+[2.170754] (eng10026_lab2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.170951] (-) TimerEvent: {}
+[2.248367] (eng10026_lab2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.248602] (eng10026_lab2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ros/colcon_ws/ros2-q4d/src/eng10026_lab2/include>\n'}
+[2.248688] (eng10026_lab2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.249108] (eng10026_lab2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.249971] (eng10026_lab2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.250054] (eng10026_lab2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.250385] (eng10026_lab2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.251327] (eng10026_lab2) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.264596] (eng10026_lab2) StdoutLine: {'line': b'-- Generating done\n'}
+[2.266682] (eng10026_lab2) StdoutLine: {'line': b'-- Build files have been written to: /home/ros/colcon_ws/build/eng10026_lab2\n'}
+[2.271564] (-) TimerEvent: {}
+[2.286281] (eng10026_lab2) CommandEnded: {'returncode': 0}
+[2.286800] (eng10026_lab2) JobProgress: {'identifier': 'eng10026_lab2', 'progress': 'build'}
+[2.286873] (eng10026_lab2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/colcon_ws/build/eng10026_lab2', '--', '-j3', '-l3'], 'cwd': '/home/ros/colcon_ws/build/eng10026_lab2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/ros/colcon_ws/ros2-q4d'), ('TERM_PROGRAM_VERSION', '1.76.0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/120/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1214'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ros'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-VirtualBox:@/tmp/.ICE-unix/1189,unix/ros-VirtualBox:/tmp/.ICE-unix/1189'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/10e562e7_fde4_4aec_92f9_d5ad062b9dc4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YAG701'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c752fda7e1.sock'), ('GNOME_TERMINAL_SERVICE', ':1.390'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/120/usr/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/colcon_ws/build/eng10026_lab2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.342339] (eng10026_lab2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/point_map.dir/src/point_map.cpp.o\x1b[0m\n'}
+[2.371888] (-) TimerEvent: {}
+[2.398896] (eng10026_lab2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable point_map\x1b[0m\n'}
+[2.472487] (-) TimerEvent: {}
+[2.573716] (-) TimerEvent: {}
+[2.578961] (eng10026_lab2) StdoutLine: {'line': b'[100%] Built target point_map\n'}
+[2.600924] (eng10026_lab2) CommandEnded: {'returncode': 0}
+[2.630555] (eng10026_lab2) JobProgress: {'identifier': 'eng10026_lab2', 'progress': 'install'}
+[2.630614] (eng10026_lab2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/colcon_ws/build/eng10026_lab2'], 'cwd': '/home/ros/colcon_ws/build/eng10026_lab2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/ros/colcon_ws/ros2-q4d'), ('TERM_PROGRAM_VERSION', '1.76.0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/120/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1214'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ros'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-VirtualBox:@/tmp/.ICE-unix/1189,unix/ros-VirtualBox:/tmp/.ICE-unix/1189'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/10e562e7_fde4_4aec_92f9_d5ad062b9dc4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YAG701'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c752fda7e1.sock'), ('GNOME_TERMINAL_SERVICE', ':1.390'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/120/usr/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/colcon_ws/build/eng10026_lab2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.635133] (eng10026_lab2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.635351] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/lib/eng10026_lab2/point_map\n'}
+[2.638639] (eng10026_lab2) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/colcon_ws/install/eng10026_lab2/lib/eng10026_lab2/point_map" to ""\n'}
+[2.638723] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/share/ament_index/resource_index/package_run_dependencies/eng10026_lab2\n'}
+[2.638806] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/share/ament_index/resource_index/parent_prefix_path/eng10026_lab2\n'}
+[2.638886] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/environment/ament_prefix_path.sh\n'}
+[2.638963] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/environment/ament_prefix_path.dsv\n'}
+[2.639038] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/environment/path.sh\n'}
+[2.639116] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/environment/path.dsv\n'}
+[2.639196] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/local_setup.bash\n'}
+[2.639275] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/local_setup.sh\n'}
+[2.639357] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/local_setup.zsh\n'}
+[2.639484] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/local_setup.dsv\n'}
+[2.639578] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/package.dsv\n'}
+[2.639719] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/share/ament_index/resource_index/packages/eng10026_lab2\n'}
+[2.639861] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/cmake/eng10026_lab2Config.cmake\n'}
+[2.640039] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/cmake/eng10026_lab2Config-version.cmake\n'}
+[2.645077] (eng10026_lab2) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/eng10026_lab2/share/eng10026_lab2/package.xml\n'}
+[2.645205] (eng10026_lab2) CommandEnded: {'returncode': 0}
+[2.680729] (eng10026_lab2) JobEnded: {'identifier': 'eng10026_lab2', 'rc': 0}
+[2.680987] (-) TimerEvent: {}
+[2.782620] (-) TimerEvent: {}
+[2.883907] (-) TimerEvent: {}
+[2.984556] (-) TimerEvent: {}
+[3.085579] (-) TimerEvent: {}
+[3.193191] (-) TimerEvent: {}
+[3.300470] (-) TimerEvent: {}
+[3.410628] (-) TimerEvent: {}
+[3.515762] (-) TimerEvent: {}
+[3.618791] (-) TimerEvent: {}
+[3.731733] (-) TimerEvent: {}
+[3.841609] (-) TimerEvent: {}
+[3.942949] (-) TimerEvent: {}
+[4.050308] (-) TimerEvent: {}
+[4.150808] (-) TimerEvent: {}
+[4.254474] (-) TimerEvent: {}
+[4.354842] (-) TimerEvent: {}
+[4.456615] (-) TimerEvent: {}
+[4.558599] (-) TimerEvent: {}
+[4.681648] (-) TimerEvent: {}
+[4.784689] (-) TimerEvent: {}
+[4.886323] (-) TimerEvent: {}
+[5.004048] (-) TimerEvent: {}
+[5.114214] (-) TimerEvent: {}
+[5.214546] (-) TimerEvent: {}
+[5.316178] (-) TimerEvent: {}
+[5.418305] (-) TimerEvent: {}
+[5.519138] (-) TimerEvent: {}
+[5.629290] (-) TimerEvent: {}
+[5.730597] (-) TimerEvent: {}
+[5.843583] (-) TimerEvent: {}
+[5.944001] (-) TimerEvent: {}
+[6.045796] (-) TimerEvent: {}
+[6.151919] (-) TimerEvent: {}
+[6.252520] (-) TimerEvent: {}
+[6.355764] (-) TimerEvent: {}
+[6.472484] (-) TimerEvent: {}
+[6.584659] (-) TimerEvent: {}
+[6.685429] (-) TimerEvent: {}
+[6.808593] (-) TimerEvent: {}
+[6.936456] (-) TimerEvent: {}
+[7.052231] (-) TimerEvent: {}
+[7.161598] (-) TimerEvent: {}
+[7.262628] (-) TimerEvent: {}
+[7.363080] (-) TimerEvent: {}
+[7.463648] (-) TimerEvent: {}
+[7.573675] (-) TimerEvent: {}
+[7.680556] (-) TimerEvent: {}
+[7.812124] (-) TimerEvent: {}
+[7.916901] (-) TimerEvent: {}
+[8.018471] (-) TimerEvent: {}
+[8.118786] (-) TimerEvent: {}
+[8.220824] (-) TimerEvent: {}
+[8.327521] (-) TimerEvent: {}
+[8.434975] (-) TimerEvent: {}
+[8.540228] (-) TimerEvent: {}
+[8.643594] (-) TimerEvent: {}
+[8.744380] (-) TimerEvent: {}
+[8.853912] (-) TimerEvent: {}
+[8.956092] (-) TimerEvent: {}
+[9.077766] (-) TimerEvent: {}
+[9.181834] (-) TimerEvent: {}
+[9.287183] (-) TimerEvent: {}
+[9.391863] (-) TimerEvent: {}
+[9.493401] (-) TimerEvent: {}
+[9.594308] (-) TimerEvent: {}
+[9.696319] (-) TimerEvent: {}
+[9.808311] (-) TimerEvent: {}
+[9.920292] (-) TimerEvent: {}
+[10.032261] (-) TimerEvent: {}
+[10.144387] (-) TimerEvent: {}
+[10.256275] (-) TimerEvent: {}
+[10.368284] (-) TimerEvent: {}
+[10.480267] (-) TimerEvent: {}
+[10.608208] (-) TimerEvent: {}
+[10.736269] (-) TimerEvent: {}
+[10.946120] (-) TimerEvent: {}
+[11.049480] (-) TimerEvent: {}
+[11.150145] (-) TimerEvent: {}
+[11.251138] (-) TimerEvent: {}
+[11.352168] (-) TimerEvent: {}
+[11.453274] (-) TimerEvent: {}
+[11.555837] (-) TimerEvent: {}
+[11.657885] (-) TimerEvent: {}
+[11.771097] (-) TimerEvent: {}
+[11.911828] (-) TimerEvent: {}
+[12.022418] (-) TimerEvent: {}
+[12.125772] (-) TimerEvent: {}
+[12.226513] (-) TimerEvent: {}
+[12.370533] (-) TimerEvent: {}
+[12.471307] (-) TimerEvent: {}
+[12.573191] (-) TimerEvent: {}
+[12.700865] (-) TimerEvent: {}
+[12.809798] (-) TimerEvent: {}
+[12.913559] (-) TimerEvent: {}
+[13.016241] (-) TimerEvent: {}
+[13.121578] (-) TimerEvent: {}
+[13.265677] (-) TimerEvent: {}
+[13.366126] (-) TimerEvent: {}
+[13.467176] (-) TimerEvent: {}
+[13.585507] (-) TimerEvent: {}
+[13.687368] (-) TimerEvent: {}
+[13.801099] (-) TimerEvent: {}
+[13.910699] (-) TimerEvent: {}
+[14.025302] (-) TimerEvent: {}
+[14.137381] (-) TimerEvent: {}
+[14.250577] (-) TimerEvent: {}
+[14.361314] (-) TimerEvent: {}
+[14.475036] (-) TimerEvent: {}
+[14.598395] (-) TimerEvent: {}
+[14.747679] (-) TimerEvent: {}
+[14.889591] (-) TimerEvent: {}
+[15.003263] (-) TimerEvent: {}
+[15.111427] (-) TimerEvent: {}
+[15.212052] (-) TimerEvent: {}
+[15.313248] (-) TimerEvent: {}
+[15.414999] (-) TimerEvent: {}
+[15.519300] (-) TimerEvent: {}
+[15.619807] (-) TimerEvent: {}
+[15.720544] (-) TimerEvent: {}
+[15.820788] (-) TimerEvent: {}
+[15.921029] (-) TimerEvent: {}
+[16.021488] (-) TimerEvent: {}
+[16.121937] (-) TimerEvent: {}
+[16.222434] (-) TimerEvent: {}
+[16.323094] (-) TimerEvent: {}
+[16.423682] (-) TimerEvent: {}
+[16.523968] (-) TimerEvent: {}
+[16.629553] (-) TimerEvent: {}
+[16.730029] (-) TimerEvent: {}
+[16.830485] (-) TimerEvent: {}
+[16.933611] (-) TimerEvent: {}
+[17.034104] (-) TimerEvent: {}
+[17.135162] (-) TimerEvent: {}
+[17.235542] (-) TimerEvent: {}
+[17.336167] (-) TimerEvent: {}
+[17.399852] (q4d_teleop) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable q4d_teleop_rviz\x1b[0m\n'}
+[17.441626] (-) TimerEvent: {}
+[17.552821] (-) TimerEvent: {}
+[17.664755] (-) TimerEvent: {}
+[17.776751] (-) TimerEvent: {}
+[17.889281] (-) TimerEvent: {}
+[18.000758] (-) TimerEvent: {}
+[18.130106] (-) TimerEvent: {}
+[18.173618] (q4d_teleop) StdoutLine: {'line': b'[100%] Built target q4d_teleop_rviz\n'}
+[18.184377] (q4d_teleop) CommandEnded: {'returncode': 0}
+[18.203372] (q4d_teleop) JobProgress: {'identifier': 'q4d_teleop', 'progress': 'install'}
+[18.203769] (q4d_teleop) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/colcon_ws/build/q4d_teleop'], 'cwd': '/home/ros/colcon_ws/build/q4d_teleop', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/ros/colcon_ws/ros2-q4d'), ('TERM_PROGRAM_VERSION', '1.76.0'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/120/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/120/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1214'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ros'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros-VirtualBox:@/tmp/.ICE-unix/1189,unix/ros-VirtualBox:/tmp/.ICE-unix/1189'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/10e562e7_fde4_4aec_92f9_d5ad062b9dc4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YAG701'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c752fda7e1.sock'), ('GNOME_TERMINAL_SERVICE', ':1.390'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/120/usr/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros/colcon_ws/build/q4d_teleop'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[18.209684] (q4d_teleop) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.209849] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/lib/q4d_teleop/q4d_teleop_rviz\n'}
+[18.215590] (q4d_teleop) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/colcon_ws/install/q4d_teleop/lib/q4d_teleop/q4d_teleop_rviz" to ""\n'}
+[18.215845] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/launch\n'}
+[18.216022] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/launch/q4d_teleop_rviz.launch.xml\n'}
+[18.216183] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/launch/display.launch.xml\n'}
+[18.216267] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/config\n'}
+[18.216449] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/config/display.rviz\n'}
+[18.216614] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/ament_index/resource_index/package_run_dependencies/q4d_teleop\n'}
+[18.216711] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/ament_index/resource_index/parent_prefix_path/q4d_teleop\n'}
+[18.216842] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/environment/ament_prefix_path.sh\n'}
+[18.216954] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/environment/ament_prefix_path.dsv\n'}
+[18.217096] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/environment/path.sh\n'}
+[18.217145] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/environment/path.dsv\n'}
+[18.217246] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/local_setup.bash\n'}
+[18.217346] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/local_setup.sh\n'}
+[18.217529] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/local_setup.zsh\n'}
+[18.217789] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/local_setup.dsv\n'}
+[18.218268] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.dsv\n'}
+[18.218345] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/ament_index/resource_index/packages/q4d_teleop\n'}
+[18.218408] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/cmake/q4d_teleopConfig.cmake\n'}
+[18.218467] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/cmake/q4d_teleopConfig-version.cmake\n'}
+[18.218535] (q4d_teleop) StdoutLine: {'line': b'-- Installing: /home/ros/colcon_ws/install/q4d_teleop/share/q4d_teleop/package.xml\n'}
+[18.219772] (q4d_teleop) CommandEnded: {'returncode': 0}
+[18.233701] (-) TimerEvent: {}
+[18.257538] (q4d_teleop) JobEnded: {'identifier': 'q4d_teleop', 'rc': 0}
+[18.258298] (-) EventReactorShutdown: {}

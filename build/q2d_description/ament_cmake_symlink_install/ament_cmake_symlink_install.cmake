@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ros2/colcon_ws/install/q2d_description/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/ros/colcon_ws/install/q2d_description/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ros2/colcon_ws/install/q2d_description/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/ros/colcon_ws/install/q2d_description/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ros2/colcon_ws/install/q2d_description/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/ros/colcon_ws/install/q2d_description/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/ros2/colcon_ws/install/q2d_description/${destination}")
+      set(destination "/home/ros/colcon_ws/install/q2d_description/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,49 +311,49 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(DIRECTORY "config" "launch" "urdf" "meshes" "DESTINATION" "share/q2d_description")
-ament_cmake_symlink_install_directory("/home/ros2/colcon_ws/src/q2d/q2d_description" DIRECTORY "config" "launch" "urdf" "meshes" "DESTINATION" "share/q2d_description")
+ament_cmake_symlink_install_directory("/home/ros/colcon_ws/src/q2d/q2d_description" DIRECTORY "config" "launch" "urdf" "meshes" "DESTINATION" "share/q2d_description")
 
-# install(FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/q2d_description.dsv" "DESTINATION" "share/q2d_description/environment")
-ament_cmake_symlink_install_files("/home/ros2/colcon_ws/src/q2d/q2d_description" FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/q2d_description.dsv" "DESTINATION" "share/q2d_description/environment")
+# install(FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/q2d_description.dsv" "DESTINATION" "share/q2d_description/environment")
+ament_cmake_symlink_install_files("/home/ros/colcon_ws/src/q2d/q2d_description" FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/q2d_description.dsv" "DESTINATION" "share/q2d_description/environment")
 
-# install(FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/q2d_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/ros2/colcon_ws/src/q2d/q2d_description" FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/q2d_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/q2d_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/ros/colcon_ws/src/q2d/q2d_description" FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/q2d_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/q2d_description" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/ros2/colcon_ws/src/q2d/q2d_description" FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/q2d_description" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/q2d_description" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/ros/colcon_ws/src/q2d/q2d_description" FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/q2d_description" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/q2d_description/environment")
-ament_cmake_symlink_install_files("/home/ros2/colcon_ws/src/q2d/q2d_description" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/q2d_description/environment")
+ament_cmake_symlink_install_files("/home/ros/colcon_ws/src/q2d/q2d_description" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/q2d_description/environment")
 
-# install(FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/q2d_description/environment")
-ament_cmake_symlink_install_files("/home/ros2/colcon_ws/src/q2d/q2d_description" FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/q2d_description/environment")
+# install(FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/q2d_description/environment")
+ament_cmake_symlink_install_files("/home/ros/colcon_ws/src/q2d/q2d_description" FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/q2d_description/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/q2d_description/environment")
-ament_cmake_symlink_install_files("/home/ros2/colcon_ws/src/q2d/q2d_description" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/q2d_description/environment")
+ament_cmake_symlink_install_files("/home/ros/colcon_ws/src/q2d/q2d_description" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/q2d_description/environment")
 
-# install(FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/q2d_description/environment")
-ament_cmake_symlink_install_files("/home/ros2/colcon_ws/src/q2d/q2d_description" FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/q2d_description/environment")
+# install(FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/q2d_description/environment")
+ament_cmake_symlink_install_files("/home/ros/colcon_ws/src/q2d/q2d_description" FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/q2d_description/environment")
 
-# install(FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/q2d_description")
-ament_cmake_symlink_install_files("/home/ros2/colcon_ws/src/q2d/q2d_description" FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/q2d_description")
+# install(FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/q2d_description")
+ament_cmake_symlink_install_files("/home/ros/colcon_ws/src/q2d/q2d_description" FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/q2d_description")
 
-# install(FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/q2d_description")
-ament_cmake_symlink_install_files("/home/ros2/colcon_ws/src/q2d/q2d_description" FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/q2d_description")
+# install(FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/q2d_description")
+ament_cmake_symlink_install_files("/home/ros/colcon_ws/src/q2d/q2d_description" FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/q2d_description")
 
-# install(FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/q2d_description")
-ament_cmake_symlink_install_files("/home/ros2/colcon_ws/src/q2d/q2d_description" FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/q2d_description")
+# install(FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/q2d_description")
+ament_cmake_symlink_install_files("/home/ros/colcon_ws/src/q2d/q2d_description" FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/q2d_description")
 
-# install(FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/q2d_description")
-ament_cmake_symlink_install_files("/home/ros2/colcon_ws/src/q2d/q2d_description" FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/q2d_description")
+# install(FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/q2d_description")
+ament_cmake_symlink_install_files("/home/ros/colcon_ws/src/q2d/q2d_description" FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/q2d_description")
 
-# install(FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/q2d_description")
-ament_cmake_symlink_install_files("/home/ros2/colcon_ws/src/q2d/q2d_description" FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/q2d_description")
+# install(FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/q2d_description")
+ament_cmake_symlink_install_files("/home/ros/colcon_ws/src/q2d/q2d_description" FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/q2d_description")
 
-# install(FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_index/share/ament_index/resource_index/packages/q2d_description" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/ros2/colcon_ws/src/q2d/q2d_description" FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_index/share/ament_index/resource_index/packages/q2d_description" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_index/share/ament_index/resource_index/packages/q2d_description" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/ros/colcon_ws/src/q2d/q2d_description" FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_index/share/ament_index/resource_index/packages/q2d_description" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_core/q2d_descriptionConfig.cmake" "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_core/q2d_descriptionConfig-version.cmake" "DESTINATION" "share/q2d_description/cmake")
-ament_cmake_symlink_install_files("/home/ros2/colcon_ws/src/q2d/q2d_description" FILES "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_core/q2d_descriptionConfig.cmake" "/home/ros2/colcon_ws/build/q2d_description/ament_cmake_core/q2d_descriptionConfig-version.cmake" "DESTINATION" "share/q2d_description/cmake")
+# install(FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_core/q2d_descriptionConfig.cmake" "/home/ros/colcon_ws/build/q2d_description/ament_cmake_core/q2d_descriptionConfig-version.cmake" "DESTINATION" "share/q2d_description/cmake")
+ament_cmake_symlink_install_files("/home/ros/colcon_ws/src/q2d/q2d_description" FILES "/home/ros/colcon_ws/build/q2d_description/ament_cmake_core/q2d_descriptionConfig.cmake" "/home/ros/colcon_ws/build/q2d_description/ament_cmake_core/q2d_descriptionConfig-version.cmake" "DESTINATION" "share/q2d_description/cmake")
 
-# install(FILES "/home/ros2/colcon_ws/src/q2d/q2d_description/package.xml" "DESTINATION" "share/q2d_description")
-ament_cmake_symlink_install_files("/home/ros2/colcon_ws/src/q2d/q2d_description" FILES "/home/ros2/colcon_ws/src/q2d/q2d_description/package.xml" "DESTINATION" "share/q2d_description")
+# install(FILES "/home/ros/colcon_ws/src/q2d/q2d_description/package.xml" "DESTINATION" "share/q2d_description")
+ament_cmake_symlink_install_files("/home/ros/colcon_ws/src/q2d/q2d_description" FILES "/home/ros/colcon_ws/src/q2d/q2d_description/package.xml" "DESTINATION" "share/q2d_description")

@@ -1,0 +1,53 @@
+[0.029s] Invoking command in '/home/ros/colcon_ws/src/build/q2d_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/src/q2d/q2d_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/src/install/q2d_description
+[0.047s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.277s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.278s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.428s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.428s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.428s] -- Added test 'lint_cmake' to check CMake code style
+[0.428s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.429s] -- Added test 'xmllint' to check XML markup files
+[0.429s] -- Configuring done
+[0.429s] -- Generating done
+[0.429s] -- Build files have been written to: /home/ros/colcon_ws/src/build/q2d_description
+[0.447s] Invoked command in '/home/ros/colcon_ws/src/build/q2d_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/src/q2d/q2d_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/src/install/q2d_description
+[0.447s] Invoking command in '/home/ros/colcon_ws/src/build/q2d_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/src/build/q2d_description -- -j3 -l3
+[0.519s] Invoked command in '/home/ros/colcon_ws/src/build/q2d_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/src/build/q2d_description -- -j3 -l3
+[0.566s] Invoking command in '/home/ros/colcon_ws/src/build/q2d_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/src/build/q2d_description
+[0.571s] -- Install configuration: ""
+[0.571s] -- Execute custom install script
+[0.571s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/config/controller_manager.yaml
+[0.578s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/config/display.rviz
+[0.595s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/config/gazebo.yaml
+[0.607s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/launch/display.launch.py
+[0.619s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/launch/display.launch.xml
+[0.652s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/launch/gazebo.launch.xml
+[0.674s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/launch/ignition.launch.xml
+[0.699s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/launch/q2d.launch.xml
+[0.730s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/urdf/q2d.urdf
+[0.743s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/meshes/base.STL
+[0.750s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/meshes/collision/elbow_active.STL
+[0.756s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/meshes/collision/elbow_passive.STL
+[0.795s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/meshes/collision/shoulder_active.STL
+[0.795s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/meshes/collision/shoulder_passive.STL
+[0.808s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/meshes/elbow_active.STL
+[0.814s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/meshes/elbow_passive.STL
+[0.825s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/meshes/shoulder_active.STL
+[0.837s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/meshes/shoulder_passive.STL
+[0.853s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/environment/q2d_description.dsv
+[0.871s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/ament_index/resource_index/package_run_dependencies/q2d_description
+[0.888s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/ament_index/resource_index/parent_prefix_path/q2d_description
+[0.903s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/environment/ament_prefix_path.sh
+[0.929s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/environment/ament_prefix_path.dsv
+[0.957s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/environment/path.sh
+[0.984s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/environment/path.dsv
+[0.992s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/local_setup.bash
+[0.998s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/local_setup.sh
+[1.005s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/local_setup.zsh
+[1.013s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/local_setup.dsv
+[1.019s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/package.dsv
+[1.026s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/ament_index/resource_index/packages/q2d_description
+[1.069s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/cmake/q2d_descriptionConfig.cmake
+[1.101s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/cmake/q2d_descriptionConfig-version.cmake
+[1.118s] -- Symlinking: /home/ros/colcon_ws/src/install/q2d_description/share/q2d_description/package.xml
+[1.136s] Invoked command in '/home/ros/colcon_ws/src/build/q2d_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/src/build/q2d_description

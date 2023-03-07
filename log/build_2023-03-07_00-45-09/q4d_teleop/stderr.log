@@ -1,0 +1,11 @@
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:[m[K In member function ‘[01m[Kvoid Q4dTeleop::cCB(std_msgs::msg::Float64_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:171:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kc_delta[m[K’ was not declared in this scope; did you mean ‘[01m[Khcdelta[m[K’?
+  171 |         [01;31m[Kc_delta[m[K = (c_- c)/100;
+      |         [01;31m[K^~~~~~~[m[K
+      |         [32m[Khcdelta[m[K
+[01m[K/home/ros/colcon_ws/src/q4d_teleop/src/q4d_teleop_rviz.cpp:170:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Khcdelta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  170 |         double [01;35m[Khcdelta[m[K;
+      |                [01;35m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/q4d_teleop_rviz.dir/build.make:76: CMakeFiles/q4d_teleop_rviz.dir/src/q4d_teleop_rviz.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/q4d_teleop_rviz.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

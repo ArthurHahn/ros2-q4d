@@ -1,1 +1,1 @@
-/home/ros2/colcon_ws/build/q4d_description/ament_cmake_core/q4d_descriptionConfig-version.cmake
+/home/ros/colcon_ws/build/q4d_description/ament_cmake_core/q4d_descriptionConfig-version.cmake

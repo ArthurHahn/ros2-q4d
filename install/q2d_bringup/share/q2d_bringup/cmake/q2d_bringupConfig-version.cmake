@@ -1,1 +1,1 @@
-/home/ros2/colcon_ws/build/q2d_bringup/ament_cmake_core/q2d_bringupConfig-version.cmake
+/home/ros/colcon_ws/build/q2d_bringup/ament_cmake_core/q2d_bringupConfig-version.cmake

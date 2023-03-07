@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ros2/colcon_ws/src/q2d/q2d_teleop
+CMAKE_SOURCE_DIR = /home/ros/colcon_ws/src/q2d/q2d_teleop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ros2/colcon_ws/build/q2d_teleop
+CMAKE_BINARY_DIR = /home/ros/colcon_ws/build/q2d_teleop
 
 # Utility rule file for q2d_teleop_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/q2d_teleop_uninstall.dir/compiler_depend.make
 include CMakeFiles/q2d_teleop_uninstall.dir/progress.make
 
 CMakeFiles/q2d_teleop_uninstall:
-	/usr/bin/cmake -P /home/ros2/colcon_ws/build/q2d_teleop/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ros/colcon_ws/build/q2d_teleop/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 q2d_teleop_uninstall: CMakeFiles/q2d_teleop_uninstall
 q2d_teleop_uninstall: CMakeFiles/q2d_teleop_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/q2d_teleop_uninstall.dir/clean:
 .PHONY : CMakeFiles/q2d_teleop_uninstall.dir/clean
 
 CMakeFiles/q2d_teleop_uninstall.dir/depend:
-	cd /home/ros2/colcon_ws/build/q2d_teleop && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros2/colcon_ws/src/q2d/q2d_teleop /home/ros2/colcon_ws/src/q2d/q2d_teleop /home/ros2/colcon_ws/build/q2d_teleop /home/ros2/colcon_ws/build/q2d_teleop /home/ros2/colcon_ws/build/q2d_teleop/CMakeFiles/q2d_teleop_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ros/colcon_ws/build/q2d_teleop && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/colcon_ws/src/q2d/q2d_teleop /home/ros/colcon_ws/src/q2d/q2d_teleop /home/ros/colcon_ws/build/q2d_teleop /home/ros/colcon_ws/build/q2d_teleop /home/ros/colcon_ws/build/q2d_teleop/CMakeFiles/q2d_teleop_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/q2d_teleop_uninstall.dir/depend
 

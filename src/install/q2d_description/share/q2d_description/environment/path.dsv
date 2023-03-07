@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/home/ros/colcon_ws/src/build/q2d_description/ament_cmake_environment_hooks/path.dsv

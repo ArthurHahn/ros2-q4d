@@ -1,11 +1,1 @@
-/shoulder_controller:
-        ros__parameters:
-                joints:
-                        - shoulder_active_joint
-                interface_name: effort
-
-/elbow_controller:
-        ros__parameters:
-                joints:
-                        - elbow_active_joint
-                interface_name: effort
+/home/ros/colcon_ws/src/q2d/q2d_bringup/config/bypass.yaml

@@ -1,4 +1,0 @@
-Invoking command in '/home/ros/colcon_ws/build/eng10026_subscriber': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_subscriber -- -j3 -l3
-Invoked command in '/home/ros/colcon_ws/build/eng10026_subscriber' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/eng10026_subscriber -- -j3 -l3
-Invoking command in '/home/ros/colcon_ws/build/eng10026_subscriber': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_subscriber
-Invoked command in '/home/ros/colcon_ws/build/eng10026_subscriber' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/eng10026_subscriber
