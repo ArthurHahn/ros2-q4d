@@ -1,8 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target q2d_teleop_rviz[0m
-[35m[1mConsolidate compiler generated dependencies of target q2d_teleop_tablet[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/q2d_teleop_rviz.dir/src/q2d_teleop_rviz.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/q2d_teleop_tablet.dir/src/q2d_teleop_tablet.cpp.o[0m
-[ 75%] [32m[1mLinking CXX executable q2d_teleop_rviz[0m
-[100%] [32m[1mLinking CXX executable q2d_teleop_tablet[0m
-[100%] Built target q2d_teleop_rviz
-[100%] Built target q2d_teleop_tablet

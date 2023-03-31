@@ -1,6 +1,0 @@
-Invoking command in '/home/ros/colcon_ws/build/q2d_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/ros2-q4d/src/q2d/q2d_bringup -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/q2d_bringup
-Invoked command in '/home/ros/colcon_ws/build/q2d_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ros/colcon_ws/ros2-q4d/src/q2d/q2d_bringup -DCMAKE_INSTALL_PREFIX=/home/ros/colcon_ws/install/q2d_bringup
-Invoking command in '/home/ros/colcon_ws/build/q2d_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q2d_bringup -- -j3 -l3
-Invoked command in '/home/ros/colcon_ws/build/q2d_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros/colcon_ws/build/q2d_bringup -- -j3 -l3
-Invoking command in '/home/ros/colcon_ws/build/q2d_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q2d_bringup
-Invoked command in '/home/ros/colcon_ws/build/q2d_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros/colcon_ws/build/q2d_bringup
